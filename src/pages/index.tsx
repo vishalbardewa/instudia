@@ -1,3 +1,4 @@
+import TopBanner from '@/components/TopBanner';
 import { Meta } from '@/layout/Meta';
 import { Main } from '@/templates/Main';
 import { AppConfig } from '@/utils/AppConfig';
@@ -11,6 +12,11 @@ const stats = [
   { label: 'Offices', value: '1' },
   { label: 'Team Experience', value: '10 Years' },
 ];
+
+const topBannerContent = {
+  leadingText: `Big news! We're excited to announce our launch soon.`,
+  ctaText: 'Stay Tuned✌',
+};
 
 const footerNavigation = {
   main: [
@@ -98,6 +104,10 @@ const Index = () => {
         />
       }
     >
+      <TopBanner
+        message={topBannerContent.leadingText}
+        ctaText={topBannerContent.ctaText}
+      />
       <div className="bg-white">
         <main>
           {/* Hero section */}
