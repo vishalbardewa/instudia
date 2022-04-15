@@ -8,18 +8,18 @@ type BannerProps = {
 };
 export default function TopBanner(props: BannerProps) {
   return (
-    <div className="bg-indigo-600">
+    <div className="bg-yellow-400">
       <div className="mx-auto max-w-7xl p-3 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between">
           <div className="flex w-0 flex-1 items-center">
-            <span className="flex rounded-lg bg-indigo-800 p-2">
+            <span className="flex rounded-lg bg-gray-600 p-2">
               <SpeakerphoneIcon
                 className="h-6 w-6 text-white"
                 aria-hidden="true"
               />
             </span>
             <p className="ml-3 truncate font-medium text-white">
-              <span className="md:hidden">We announced a new product!</span>
+              <span className="md:hidden">{props.message}</span>
               <span className="hidden md:inline">{props.message}</span>
             </p>
           </div>
