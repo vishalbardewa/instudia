@@ -118,7 +118,7 @@ export default function LandingTop() {
                                     href={item.href}
                                     className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                                   >
-                                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-indigo-600 text-white sm:h-12 sm:w-12">
+                                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-yellow-600 text-white sm:h-12 sm:w-12">
                                       <item.icon
                                         className="h-6 w-6"
                                         aria-hidden="true"

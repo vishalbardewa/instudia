@@ -44,8 +44,8 @@ export default function BlogCard({
       </div>
       <div className="flex flex-1 flex-col justify-between bg-white p-6">
         <div className="flex-1">
-          <p className="text-sm font-medium text-indigo-600">
-            <a href={category.href} className="hover:underline">
+          <p className="text-sm font-medium text-yellow-600">
+            <a href={category.href} className="text-yellow-600 hover:underline">
               {category.name}
             </a>
           </p>
@@ -57,7 +57,7 @@ export default function BlogCard({
         <div className="mt-6 flex items-center">
           <div className="shrink-0">
             <a href={author.href}>
-              <span className="sr-only">{author.name}</span>
+              <span className="sr-only text-yellow-600">{author.name}</span>
               <img
                 className="h-10 w-10 rounded-full"
                 src={author.imageUrl}
@@ -67,7 +67,7 @@ export default function BlogCard({
           </div>
           <div className="ml-3">
             <p className="!my-0 text-sm font-medium text-gray-900">
-              <a href={author.href} className="hover:underline">
+              <a href={author.href} className="over:underline text-yellow-600">
                 {author.name}
               </a>
             </p>
