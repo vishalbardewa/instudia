@@ -66,7 +66,7 @@ export default function Navbar() {
           <>
             <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
               <div className="flex justify-start lg:w-0 lg:flex-1">
-                <motion.div animate={{ x: 20 }}>
+                <motion.div animate={{ x: 10 }}>
                   <Link href="/">
                     <a>
                       <span className="sr-only">instudia</span>

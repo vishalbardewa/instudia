@@ -22,7 +22,7 @@ export default function PageLayout(props: any) {
           animate="enter"
           exit="exit"
           transition={{ type: 'linear' }}
-          className="flex h-full w-full"
+          className="px-2"
         >
           {props.children}
         </motion.main>
