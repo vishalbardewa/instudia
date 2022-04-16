@@ -3,17 +3,17 @@ import { Meta } from '@/layout/Meta';
 import PageLayout from '@/layout/PageLayout';
 import { Main } from '@/templates/Main';
 
-const About = () => (
+const Community = () => (
   <Main
     meta={
       <Meta
-        title="About Us | instudia"
-        description="About us page for instudia"
+        title="Community | instudia"
+        description="Community Knowledge Center"
       />
     }
   >
     <PageLayout>
-      <DividerWithName name="About Us" />
+      <DividerWithName name="Community" />
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione fuga
         recusandae quidem. Quaerat molestiae blanditiis doloremque possimus
@@ -30,4 +30,4 @@ const About = () => (
   </Main>
 );
 
-export default About;
+export default Community;

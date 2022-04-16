@@ -9,16 +9,8 @@ const Main = (props: IMainProps) => (
   <div className="w-full text-gray-700 antialiased">
     {props.meta}
 
-    <div className="mx-auto max-w-screen-xl">
+    <div className="mx-auto max-w-screen-xl 2xl:w-full 2xl:max-w-screen-2xl 2xl:max-w-screen-2xl">
       <div className="content text-xl">{props.children}</div>
-
-      {/* <div className="border-t border-gray-300 py-8 text-center text-sm">
-        © Copyright {new Date().getFullYear()} {AppConfig.title}. Powered with{' '}
-        <span role="img" aria-label="Love">
-          🥰
-        </span>{' '}
-        by <b>Team instudia</b>
-      </div> */}
     </div>
   </div>
 );
