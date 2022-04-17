@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 import FeatureList from '@/components/molecules/FeatureList';
@@ -109,14 +108,14 @@ export default function Course() {
           </div>
         </div>
         <div className="my-4 flex justify-around">
-          <Image
+          {/* <Image
             src="/assets/images/programming.jpg"
             alt="python"
             width={720}
             height={420}
             priority
             className="!mr-5"
-          />
+          /> */}
           <FeatureList features={features} />
         </div>
       </div>
