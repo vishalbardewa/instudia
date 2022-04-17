@@ -30,14 +30,14 @@ const solutions = [
     name: 'Diploma in Computer Applications',
     description:
       'Get a better understanding of different prospects with computer.',
-    href: '#',
+    href: '/courses/dca',
     icon: AcademicCapIcon,
     duration: '6 to 12 months',
   },
   {
     name: 'Tally with GST',
     description: `Understand the concepts of GST and implement the same as per statutory obligations. Learn processing of GST transactions through Tally.`,
-    href: '#',
+    href: '/courses/gst',
     icon: CalculatorIcon,
     duration: '3 to 5 months',
   },
@@ -45,7 +45,7 @@ const solutions = [
     name: 'Programming with Python',
     description:
       'One of the most fastest-growing programming languages in the world driven by its application in machine learning.',
-    href: '#',
+    href: '/courses/python',
     icon: DesktopComputerIcon,
     duration: '3 to 6 months',
     variant: 'Beginner, Intermediate and Advanced',
@@ -119,7 +119,7 @@ export default function Navbar() {
                           static
                           className="absolute z-10 -ml-4 mt-3 w-screen max-w-md lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2"
                         >
-                          <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                          <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black">
                             <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
                               {solutions.map((item) => (
                                 <a
