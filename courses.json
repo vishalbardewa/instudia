@@ -3,11 +3,11 @@
     {
       "slug": "dca",
       "title": "Diploma in Computer Applications",
-      "description": "This is the content of first blog",
+      "description": "DCA is a one year diploma course to study computer applications in depth.The course imparts scientific, practical and technical knowledge to its learners about various computer tools that are used in day to day life.",
       "price": 7999,
       "discountedPrice": 5999,
       "features": {
-        "duration": "3 to 4 months",
+        "duration": "6 to 12 months",
         "prerequisites": ["Basics of Computer"],
         "level": "Entry",
         "keySkills": ["Tally", "Networking", "Python"]
@@ -16,8 +16,8 @@
 
     {
       "slug": "python",
-      "title": "Python",
-      "description": "This is the content of first blog",
+      "title": "Programming with Python",
+      "description": "This is the most comprehensive, yet straight-forward, course for the Python programming language in town! Whether you have never programmed before, already know basic syntax, or want to learn about the advanced features of Python! In this course we will teach you Python 3.",
       "price": 4999,
       "discountedPrice": 2999,
       "features": {
@@ -31,8 +31,7 @@
     {
       "slug": "gst",
       "title": "Tally ERP9 with GST",
-      "description": "This is the content of first blog",
-      "price": 6999,
+      "description": "Learn Tally with GST TallyPrime, in this course we have covered all the Topics in Tally application",
       "discountedPrice": 5999,
       "features": {
         "duration": "3 to 4 months",
@@ -44,7 +43,7 @@
     {
       "slug": "tally",
       "title": "Accounting with Tally ERP9",
-      "description": "This is the content of first blog",
+      "description": "Learn Tally with GST TallyPrime, in this course we have covered all the Topics in Tally application",
       "price": 4999,
       "discountedPrice": 2999,
       "features": {

@@ -5,6 +5,7 @@ import React from 'react';
 
 import { motion } from 'framer-motion';
 
+import IconButton from '@/components/atom/IconButton';
 import FeatureList from '@/components/molecules/FeatureList';
 import PageLayout from '@/layout/PageLayout';
 
@@ -31,6 +32,7 @@ export default function Course({
                 <p className="!my-0 text-2xl font-bold text-black">
                   ₹{discountedPrice}/-
                 </p>
+                <IconButton text="Enroll Now" />
               </div>
             </div>
           </div>
