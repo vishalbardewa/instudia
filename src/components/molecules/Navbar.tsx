@@ -198,7 +198,7 @@ export default function Navbar() {
                       <div>
                         <img
                           className="h-8 w-auto"
-                          src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                          src="/assets/images/instudia-logo.png"
                           alt="Workflow"
                         />
                       </div>

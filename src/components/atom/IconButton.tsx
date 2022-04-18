@@ -4,9 +4,10 @@ import { PaperAirplaneIcon } from '@heroicons/react/outline';
 
 interface IIconButton {
   text: string;
+  formLink: string;
 }
 
-export default function IconButton({ text }: IIconButton) {
+export default function IconButton({ text, formLink }: IIconButton) {
   return (
     <button
       type="button"
@@ -14,7 +15,8 @@ export default function IconButton({ text }: IIconButton) {
     >
       <a
         className="text-white"
-        href="https://2vbjldc556s.typeform.com/to/UV8mGea7"
+        href={formLink}
+        // typeform "https://2vbjldc556s.typeform.com/to/UV8mGea7"
       >
         {text}
       </a>

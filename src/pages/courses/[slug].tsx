@@ -32,7 +32,10 @@ export default function Course({
                 <p className="!my-0 text-2xl font-bold text-black">
                   ₹{discountedPrice}/-
                 </p>
-                <IconButton text="Enroll Now" />
+                <IconButton
+                  text="Enroll Now"
+                  formLink="https://sprw.io/stt-1e2358431b"
+                />
               </div>
             </div>
           </div>
