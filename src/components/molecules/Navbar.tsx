@@ -30,7 +30,7 @@ const solutions = [
     name: 'Diploma in Computer Applications',
     description:
       'Get a better understanding of different prospects with computer.',
-    href: '/courses/dca',
+    href: '/courses/diploma',
     icon: AcademicCapIcon,
     duration: '6 to 12 months',
   },
