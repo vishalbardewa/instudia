@@ -1,84 +1,78 @@
+import fs from 'fs';
+import path from 'path';
+
 import React from 'react';
 
 import { motion } from 'framer-motion';
-import { useRouter } from 'next/router';
 
-import FeatureList from '@/components/molecules/FeatureList';
 import PageLayout from '@/layout/PageLayout';
 
-interface ICourse {
-  dca: string;
-  tally: string;
-  python: string;
-  gst: string;
-}
+// interface ICourse {
+//   dca: string;
+//   tally: string;
+//   python: string;
+//   gst: string;
+// }
 
-interface ICourseDetails {
-  name: string;
-  price: number;
-  discountedPrice: number;
-  features: any;
-}
+// interface ICourseDetails {
+//   name: string;
+//   price: number;
+//   discountedPrice: number;
+//   features: any;
+// }
 
-const courseMap = {
-  dca: {
-    name: 'Diploma in Computer Applications',
-    price: 7999,
-    discountedPrice: 5999,
-    features: {
-      duration: '3 to 4 months',
-      prerequisites: ['Basics of Computer'],
-      level: 'Entry',
-      keySkills: ['Tally', 'Networking', 'Python'],
-    },
-  },
-  tally: {
-    name: 'Accounting with Tally',
-    price: 4999,
-    discountedPrice: 2999,
-    features: {
-      duration: '3 to 4 months',
-      prerequisites: ['Basics of Computer'],
-      level: 'Entry',
-      keySkills: ['Tally', 'Networking', 'Python'],
-    },
-  },
-  python: {
-    name: 'Python',
-    price: 4999,
-    discountedPrice: 2999,
-    features: {
-      duration: '3 to 4 months',
-      prerequisites: ['Basics of Computer'],
-      level: 'Entry',
-      keySkills: ['Tally', 'Networking', 'Python'],
-    },
-  },
-  gst: {
-    name: 'Tally with GST',
-    price: 6999,
-    discountedPrice: 5999,
-    features: {
-      duration: '3 to 4 months',
-      prerequisites: ['Basics of Computer'],
-      level: 'Entry',
-      keySkills: ['Tally', 'Networking', 'Python'],
-    },
-  },
-};
+// const courseMap = {
+//   dca: {
+//     name: 'Diploma in Computer Applications',
+//     price: 7999,
+//     discountedPrice: 5999,
+//     features: {
+//       duration: '3 to 4 months',
+//       prerequisites: ['Basics of Computer'],
+//       level: 'Entry',
+//       keySkills: ['Tally', 'Networking', 'Python'],
+//     },
+//   },
+//   tally: {
+//     name: 'Accounting with Tally',
+//     price: 4999,
+//     discountedPrice: 2999,
+//     features: {
+//       duration: '3 to 4 months',
+//       prerequisites: ['Basics of Computer'],
+//       level: 'Entry',
+//       keySkills: ['Tally', 'Networking', 'Python'],
+//     },
+//   },
+//   python: {
+//     name: 'Python',
+//     price: 4999,
+//     discountedPrice: 2999,
+//     features: {
+//       duration: '3 to 4 months',
+//       prerequisites: ['Basics of Computer'],
+//       level: 'Entry',
+//       keySkills: ['Tally', 'Networking', 'Python'],
+//     },
+//   },
+//   gst: {
+//     name: 'Tally with GST',
+//     price: 6999,
+//     discountedPrice: 5999,
+//     features: {
+//       duration: '3 to 4 months',
+//       prerequisites: ['Basics of Computer'],
+//       level: 'Entry',
+//       keySkills: ['Tally', 'Networking', 'Python'],
+//     },
+//   },
+// };
 
-const getCourseDetails = (slug: any): ICourseDetails => {
-  return courseMap[slug as keyof ICourse];
-};
+// const getCourseDetails = (slug: any): ICourseDetails => {
+//   return courseMap[slug as keyof ICourse];
+// };
 
-export default function Course() {
-  const router = useRouter();
-  const { slug } = router.query || 'dca';
-  const { name, price, discountedPrice, features } =
-    getCourseDetails(slug) || {};
-
-  if (!name) return <div>Not Found</div>;
-
+export default function Course({ courseDetails }: any) {
   return (
     <PageLayout>
       <div className="container mx-auto px-4 sm:px-6 lg:px-1">
@@ -87,7 +81,7 @@ export default function Course() {
             <div className="flex justify-between sm:w-2/3 lg:w-full">
               <div className="lg:w-2/3">
                 <h2 className="text-6xl font-bold text-black overline decoration-4">
-                  {name}:
+                  {courseDetails.title}:
                 </h2>
                 <p className="mt-1">
                   Repudiandae sint consequuntur vel. Amet ut nobis explicabo
@@ -98,10 +92,10 @@ export default function Course() {
               <div className="flex flex-col items-center justify-center rounded-lg bg-yellow-300 px-8 py-6">
                 <h5 className="text-2xl font-bold text-black">Total Payment</h5>
                 <motion.p className="!mb-0 text-5xl font-bold text-slate-50 line-through">
-                  ₹{price}/-
+                  ₹{courseDetails.slug}/-
                 </motion.p>
                 <p className="!my-0 text-2xl font-bold text-black">
-                  ₹{discountedPrice}/-
+                  ₹{courseDetails.slug}/-
                 </p>
               </div>
             </div>
@@ -116,9 +110,33 @@ export default function Course() {
             priority
             className="!mr-5"
           /> */}
-          <FeatureList features={features} />
+          {/* <FeatureList features={features} /> */}
         </div>
       </div>
     </PageLayout>
   );
+}
+
+export async function getStaticProps(context: any) {
+  const { params } = context;
+  const blogId = params.blogid;
+  const fileToRead = path.join(process.cwd(), 'courses.json');
+  const data = JSON.parse(await fs.readFileSync(fileToRead, 'utf-8'));
+  const course = data.blogs.find((item: any) => item.id === blogId);
+  return {
+    props: {
+      courseDetails: course,
+    },
+  };
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [
+      { params: { slug: 'dca' } },
+      { params: { slug: 'python' } },
+      { params: { slug: 'gst' } },
+    ],
+    fallback: false,
+  };
 }

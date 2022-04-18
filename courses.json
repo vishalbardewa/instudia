@@ -1,0 +1,21 @@
+{
+  "blogs": [
+    {
+      "slug": "dca",
+      "title": "My First Blog",
+      "description": "This is the content of first blog"
+    },
+
+    {
+      "slug": "python",
+      "title": "My Second Blog",
+      "description": "This is the content of second blog"
+    },
+
+    {
+      "slug": "gst",
+      "title": "My Third Blog",
+      "description": "This is the content of third blog"
+    }
+  ]
+}
