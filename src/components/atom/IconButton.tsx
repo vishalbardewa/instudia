@@ -16,6 +16,8 @@ export default function IconButton({ text, formLink }: IIconButton) {
       <a
         className="text-white"
         href={formLink}
+        target="_blank"
+        rel="noreferrer"
         // typeform "https://2vbjldc556s.typeform.com/to/UV8mGea7"
       >
         {text}
