@@ -1,21 +1,58 @@
 {
-  "blogs": [
+  "courses": [
     {
       "slug": "dca",
-      "title": "My First Blog",
-      "description": "This is the content of first blog"
+      "title": "Diploma in Computer Applications",
+      "description": "This is the content of first blog",
+      "price": 7999,
+      "discountedPrice": 5999,
+      "features": {
+        "duration": "3 to 4 months",
+        "prerequisites": ["Basics of Computer"],
+        "level": "Entry",
+        "keySkills": ["Tally", "Networking", "Python"]
+      }
     },
 
     {
       "slug": "python",
-      "title": "My Second Blog",
-      "description": "This is the content of second blog"
+      "title": "Python",
+      "description": "This is the content of first blog",
+      "price": 4999,
+      "discountedPrice": 2999,
+      "features": {
+        "duration": "3 to 4 months",
+        "prerequisites": ["Basics of Computer"],
+        "level": "Entry",
+        "keySkills": ["Tally", "Networking", "Python"]
+      }
     },
 
     {
       "slug": "gst",
-      "title": "My Third Blog",
-      "description": "This is the content of third blog"
+      "title": "Tally ERP9 with GST",
+      "description": "This is the content of first blog",
+      "price": 6999,
+      "discountedPrice": 5999,
+      "features": {
+        "duration": "3 to 4 months",
+        "prerequisites": ["Basics of Computer"],
+        "level": "Entry",
+        "keySkills": ["Tally", "Networking", "Python"]
+      }
+    },
+    {
+      "slug": "tally",
+      "title": "Accounting with Tally ERP9",
+      "description": "This is the content of first blog",
+      "price": 4999,
+      "discountedPrice": 2999,
+      "features": {
+        "duration": "3 to 4 months",
+        "prerequisites": ["Basics of Computer"],
+        "level": "Entry",
+        "keySkills": ["Tally", "Networking", "Python"]
+      }
     }
   ]
 }
