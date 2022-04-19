@@ -39,7 +39,7 @@ export default function LandingTop() {
                       </a>
                       <a
                         href="#"
-                        className="flex items-center justify-center rounded-md border border-transparent bg-slate-500 bg-opacity-80 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8"
+                        className="flex items-center justify-center rounded-md border border-transparent bg-slate-500 px-4 py-3 text-base font-medium text-white shadow-sm sm:px-8"
                       >
                         Explore Courses
                       </a>

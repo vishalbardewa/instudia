@@ -17,7 +17,7 @@ export default function Course({
       <div className="container mx-auto px-4 sm:px-6 lg:px-1">
         <div className="overflow-hidden rounded-lg bg-white shadow">
           <div className="px-4 py-5 sm:p-6">
-            <div className="flex justify-between sm:w-2/3 lg:w-full">
+            <div className="flex flex-col justify-between md:w-full lg:w-full lg:flex-row">
               <div className="lg:w-2/3">
                 <h2 className="text-6xl font-bold text-black overline decoration-4">
                   {title}:

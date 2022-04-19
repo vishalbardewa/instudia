@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { motion } from 'framer-motion';
+import FloatingWhatsApp from 'react-floating-whatsapp';
 
 import { Main } from '@/templates/Main';
 
@@ -26,6 +27,13 @@ export default function PageLayout(props: any) {
         >
           {props.children}
         </motion.main>
+        <FloatingWhatsApp
+          phoneNumber="+918798587779"
+          accountName="instudia"
+          avatar="/assets/images/instudia-square.png"
+          className=""
+          allowClickAway
+        />
       </div>
     </Main>
   );

@@ -7,7 +7,7 @@ import PageLayout from '@/layout/PageLayout';
 import { Main } from '@/templates/Main';
 
 const stats = [
-  { label: 'Founded', value: '2022' },
+  { label: 'Founded', value: '2018' },
   { label: 'Courses', value: '12' },
   { label: 'Offices', value: '1' },
   { label: 'Team Experience', value: '10 Years' },
@@ -20,7 +20,7 @@ const Index = () => {
         meta={
           <Meta
             title="instudia"
-            description="instudia official website | coming soon"
+            description="instudia official website | computer training institute"
           />
         }
       >
