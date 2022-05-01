@@ -7,7 +7,6 @@ import { ICourse } from '@/interfaces';
 
 export default function CourseCard({
   title,
-  imageUrl,
   category,
   description,
   slug,
@@ -19,7 +18,11 @@ export default function CourseCard({
       className="col-span-3 flex flex-col overflow-hidden rounded-lg shadow-lg lg:col-span-1"
     >
       <div className="shrink-0">
-        <img className="h-48 w-full object-cover" src={imageUrl} alt="" />
+        <img
+          className="h-full w-full object-cover"
+          src={`/assets/images/${slug}.png`}
+          alt=""
+        />
       </div>
       <div className="flex flex-1 flex-col justify-between bg-white p-6">
         <div className="flex-1">

@@ -4,7 +4,6 @@ import { ICourse } from '@/interfaces';
 
 export default function ImageBanner({
   title,
-  imageUrl,
   description,
   slug,
   duration,
@@ -12,8 +11,12 @@ export default function ImageBanner({
 }: ICourse) {
   return (
     <div className="relative col-span-3 bg-white">
-      <div className="h-56 bg-yellow-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
-        <img className="h-full w-full object-cover" src={imageUrl} alt={slug} />
+      <div className="h-56 bg-yellow-600 sm:h-72 lg:absolute lg:left-0 lg:h-full">
+        <img
+          className="h-full w-full object-cover"
+          src={`/assets/images/${slug}.png`}
+          alt={slug}
+        />
       </div>
       <div className="relative mx-auto max-w-7xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16">
         <div className="mx-auto max-w-2xl lg:mr-0 lg:ml-auto lg:w-1/2 lg:max-w-none lg:pl-10">
