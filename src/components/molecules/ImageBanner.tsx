@@ -36,7 +36,7 @@ export default function ImageBanner({
                   {`${duration} ${durationUnit}`}
                 </dd>
               </div>
-              <div className="flex flex-col px-8 pt-8">
+              {/* <div className="flex flex-col px-8 pt-8">
                 <dt className="order-2 text-base font-medium text-gray-500">
                   Pepperoni
                 </dt>
@@ -51,7 +51,7 @@ export default function ImageBanner({
                 <dd className="order-1 text-2xl font-extrabold text-yellow-600 sm:text-3xl">
                   100k+
                 </dd>
-              </div>
+              </div> */}
             </dl>
           </div>
         </div>
