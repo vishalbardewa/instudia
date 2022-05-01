@@ -27,4 +27,6 @@ export interface ICourse {
   duration?: number;
   durationUnit: string;
   featured?: boolean;
+  showOnCoursesDropdown?: boolean;
+  icon?: any;
 }

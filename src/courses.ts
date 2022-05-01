@@ -20,6 +20,7 @@ export const courses = [
     duration: 6,
     durationUnit: 'months',
     featured: true,
+    showOnCoursesDropdown: true,
   },
 
   {
@@ -40,7 +41,7 @@ export const courses = [
     },
     duration: 6,
     durationUnit: 'months',
-    // featured: true,
+    showOnCoursesDropdown: true,
   },
 
   {
@@ -61,6 +62,7 @@ export const courses = [
     },
     duration: 6,
     durationUnit: 'months',
+    showOnCoursesDropdown: true,
   },
 
   {
@@ -102,6 +104,7 @@ export const courses = [
     duration: 6,
     durationUnit: 'months',
     featured: true,
+    showOnCoursesDropdown: true,
   },
 
   {
@@ -122,6 +125,7 @@ export const courses = [
     },
     duration: 6,
     durationUnit: 'months',
+    showOnCoursesDropdown: true,
   },
 
   {

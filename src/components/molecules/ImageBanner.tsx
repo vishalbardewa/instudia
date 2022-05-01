@@ -1,4 +1,5 @@
 import { UsersIcon } from '@heroicons/react/solid';
+import Link from 'next/link';
 
 import { ICourse } from '@/interfaces';
 
@@ -13,20 +14,29 @@ export default function ImageBanner({
     <div className="relative col-span-3 bg-white">
       <div className="h-56 bg-yellow-600 sm:h-72 lg:absolute lg:left-0 lg:h-full">
         <img
-          className="h-full w-full object-cover"
+          className="w-full object-cover lg:h-full"
           src={`/assets/images/${slug}.png`}
           alt={slug}
         />
       </div>
       <div className="relative mx-auto max-w-7xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16">
-        <div className="mx-auto max-w-2xl lg:mr-0 lg:ml-auto lg:w-1/2 lg:max-w-none lg:pl-10">
+        <div className="mx-auto mt-24 max-w-2xl lg:mr-0 lg:ml-auto lg:mt-0 lg:w-1/2 lg:max-w-none lg:pl-10">
           <div>
             <div className="flex h-12 w-12 items-center justify-center rounded-md bg-yellow-500 text-white">
               <UsersIcon className="h-6 w-6" aria-hidden="true" />
             </div>
           </div>
           <h2 className="mt-6 text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            {title}
+            <Link href={`/${slug}`}>
+              <a
+                target="_blank"
+                href={`/${slug}`}
+                className="text-black"
+                rel="noreferrer"
+              >
+                {title}
+              </a>
+            </Link>
           </h2>
           <p className="mt-6 text-lg text-gray-500">{description}</p>
           <div className="mt-8 overflow-hidden">
