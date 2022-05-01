@@ -85,7 +85,6 @@ export async function getStaticPaths() {
       { params: { slug: 'graphic-level-2' } },
       { params: { slug: 'graphic-level-3' } },
       { params: { slug: 'advanced-excel' } },
-      { params: { slug: 'hardware' } },
     ],
     fallback: false,
   };
