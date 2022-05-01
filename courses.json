@@ -4,8 +4,7 @@
       "slug": "dca",
       "title": "Diploma in Computer Applications",
       "description": "DCA is a one year diploma course to study computer applications in depth.The course imparts scientific, practical and technical knowledge to its learners about various computer tools that are used in day to day life.",
-      "price": 7999,
-      "discountedPrice": 5999,
+      "price": { "original": 10999, "discountedPrice": 7999 },
       "features": {
         "duration": "6 to 12 months",
         "prerequisites": ["Basics of Computer"],
@@ -15,13 +14,12 @@
     },
 
     {
-      "slug": "python",
-      "title": "Programming with Python",
+      "slug": "python-level-1",
+      "title": "Programming with Python I",
       "description": "This is the most comprehensive, yet straight-forward, course for the Python programming language in town! Whether you have never programmed before, already know basic syntax, or want to learn about the advanced features of Python! In this course we will teach you Python 3.",
-      "price": 4999,
-      "discountedPrice": 2999,
+      "price": { "original": 4999, "discountedPrice": 2999 },
       "features": {
-        "duration": "3 to 4 months",
+        "duration": "1 month",
         "prerequisites": ["Basics of Computer"],
         "level": "Entry",
         "keySkills": ["Tally", "Networking", "Python"]
@@ -29,27 +27,144 @@
     },
 
     {
-      "slug": "gst",
-      "title": "Tally ERP9 with GST",
-      "description": "Learn Tally with GST TallyPrime, in this course we have covered all the Topics in Tally application",
-      "discountedPrice": 5999,
+      "slug": "python-level-2",
+      "title": "Programming with Python II",
+      "description": "This is the most comprehensive, yet straight-forward, course for the Python programming language in town! Whether you have never programmed before, already know basic syntax, or want to learn about the advanced features of Python! In this course we will teach you Python 3.",
+      "price": { "original": 7999, "discountedPrice": 5999 },
       "features": {
         "duration": "3 to 4 months",
+        "prerequisites": ["Basics of Computer", "Programming with Python I"],
+        "level": "Intermediate",
+        "keySkills": ["Tally", "Networking", "Python"]
+      }
+    },
+
+    {
+      "slug": "python-level-3",
+      "title": "Programming with Python III",
+      "description": "This is the most comprehensive, yet straight-forward, course for the Python programming language in town! Whether you have never programmed before, already know basic syntax, or want to learn about the advanced features of Python! In this course we will teach you Python 3.",
+      "price": { "original": 11999, "discountedPrice": 9999 },
+      "features": {
+        "duration": "3 to 4 months",
+        "prerequisites": ["Basics of Computer", "Programming with Python II"],
+        "level": "Advanced",
+        "keySkills": ["Tally", "Networking", "Python"]
+      }
+    },
+
+    {
+      "slug": "gst",
+      "title": "Tally ERP9 with GST",
+      "description": "Learn Tally ERP9 with GST, in this course we have covered all the Topics in Tally application",
+      "price": { "original": 9999, "discountedPrice": 6999 },
+      "features": {
+        "duration": "3 months",
+        "prerequisites": ["Basics of Computer", "Basics of Tally"],
+        "level": "Intermediate",
+        "keySkills": ["Tally", "Networking", "Python"]
+      }
+    },
+
+    {
+      "slug": "tally",
+      "title": "Accounting with Tally ERP9",
+      "description": "Learn Tally with GST, in this course we have covered all the Topics in Tally application",
+      "price": { "original": 4999, "discountedPrice": 2999 },
+      "features": {
+        "duration": "3 to 4 months",
+        "prerequisites": ["Basics of Computer"],
+        "level": "Entry",
+        "keySkills": ["Tally", "Python"]
+      }
+    },
+
+    {
+      "slug": "pgdca",
+      "title": "Post Graduate Diploma in Computer Applications",
+      "description": "PGDCA",
+      "price": { "original": 17999, "discountedPrice": 14999 },
+      "features": {
+        "duration": "12 to 15 months",
+        "prerequisites": ["Basics of Computer"],
+        "level": "Entry",
+        "keySkills": ["Tally", "Python"]
+      }
+    },
+
+    {
+      "slug": "adca",
+      "title": "Advanced Diploma in Computer Applications",
+      "description": "ADCA",
+      "price": { "original": 13999, "discountedPrice": 9999 },
+      "features": {
+        "duration": "4 to 6 months",
+        "prerequisites": ["Basics of Computer"],
+        "level": "Entry",
+        "keySkills": ["Tally", "Python"]
+      }
+    },
+
+    {
+      "slug": "pca",
+      "title": "Program in Computer Applications",
+      "description": "PCA",
+      "price": { "original": 13999, "discountedPrice": 11999 },
+      "features": {
+        "duration": "4 to 6 months",
+        "prerequisites": ["Basics of Computer"],
+        "level": "Entry",
+        "keySkills": ["Tally", "Python"]
+      }
+    },
+
+    {
+      "slug": "advanced-excel",
+      "title": "Advanced Excel",
+      "description": "Excel",
+      "price": { "original": 4999, "discountedPrice": 3199 },
+      "features": {
+        "duration": "1 to 2 months",
+        "prerequisites": ["Basics of Computer"],
+        "level": "Advanced",
+        "keySkills": ["Excel"]
+      }
+    },
+
+    {
+      "slug": "graphic-level-1",
+      "title": "Graphic Designing I",
+      "description": "Graphic Designing.",
+      "price": { "original": 6999, "discountedPrice": 4999 },
+      "features": {
+        "duration": "1 month",
         "prerequisites": ["Basics of Computer"],
         "level": "Entry",
         "keySkills": ["Tally", "Networking", "Python"]
       }
     },
+
     {
-      "slug": "tally",
-      "title": "Accounting with Tally ERP9",
-      "description": "Learn Tally with GST TallyPrime, in this course we have covered all the Topics in Tally application",
-      "price": 4999,
-      "discountedPrice": 2999,
+      "slug": "graphic-level-2",
+      "title": "Graphic Designing II",
+      "description": "Graphic Designing.",
+      "price": { "original": 9999, "discountedPrice": 7999 },
       "features": {
         "duration": "3 to 4 months",
-        "prerequisites": ["Basics of Computer"],
-        "level": "Entry",
+        "prerequisites": ["Basics of Computer", "Programming with Python I"],
+        "level": "Intermediate",
+        "keySkills": ["Tally", "Networking", "Python"]
+      }
+    },
+
+    {
+      "slug": "graphic-level-3",
+      "title": "Graphic Designing III",
+      "description": "Graphic Designing.",
+      "price": { "original": 15999, "discountedPrice": 12999 },
+      "features": {
+        "duration": "3 to 4 months",
+        "prerequisites": ["Basics of Computer", "Programming with Python I"],
+        "level": "Intermediate",
         "keySkills": ["Tally", "Networking", "Python"]
       }
     }

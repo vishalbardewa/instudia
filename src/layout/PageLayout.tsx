@@ -23,7 +23,6 @@ export default function PageLayout(props: any) {
           animate="enter"
           exit="exit"
           transition={{ type: 'linear' }}
-          className="px-2"
         >
           {props.children}
         </motion.main>
@@ -31,7 +30,6 @@ export default function PageLayout(props: any) {
           phoneNumber="+918798587779"
           accountName="instudia"
           avatar="/assets/images/instudia-square.png"
-          className=""
           allowClickAway
         />
       </div>

@@ -10,7 +10,7 @@ import FeatureList from '@/components/molecules/FeatureList';
 import PageLayout from '@/layout/PageLayout';
 
 export default function Course({
-  courseDetails: { title, description, price, discountedPrice, features },
+  courseDetails: { title, description, price, features },
 }: any) {
   return (
     <PageLayout>
@@ -27,10 +27,10 @@ export default function Course({
               <div className="flex flex-col items-center justify-center rounded-lg bg-yellow-300 px-8 py-6">
                 <h5 className="text-2xl font-bold text-black">Total Payment</h5>
                 <motion.p className="!mb-0 text-5xl font-bold text-slate-50 line-through">
-                  ₹{price}/-
+                  ₹{price?.original}/-
                 </motion.p>
                 <p className="!my-0 text-2xl font-bold text-black">
-                  ₹{discountedPrice}/-
+                  ₹{price?.discountedPrice}/-
                 </p>
                 <IconButton
                   text="Enroll Now"
@@ -73,9 +73,18 @@ export async function getStaticPaths() {
   return {
     paths: [
       { params: { slug: 'dca' } },
-      { params: { slug: 'python' } },
+      { params: { slug: 'python-level-1' } },
+      { params: { slug: 'python-level-2' } },
+      { params: { slug: 'python-level-3' } },
       { params: { slug: 'gst' } },
       { params: { slug: 'tally' } },
+      { params: { slug: 'pgdca' } },
+      { params: { slug: 'adca' } },
+      { params: { slug: 'pca' } },
+      { params: { slug: 'graphic-level-1' } },
+      { params: { slug: 'graphic-level-2' } },
+      { params: { slug: 'graphic-level-3' } },
+      { params: { slug: 'advance-excel' } },
     ],
     fallback: false,
   };

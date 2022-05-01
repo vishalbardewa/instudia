@@ -1,3 +1,5 @@
+import { AnimatePresence, AnimateSharedLayout } from 'framer-motion';
+
 import CTAWithText from '@/components/atom/CTAWithText';
 import CardSection from '@/components/molecules/CardSection';
 import TestimonialWithStats from '@/components/molecules/TestimonialWithStats';
@@ -15,25 +17,31 @@ const stats = [
 
 const Index = () => {
   return (
-    <PageLayout>
-      <Main
-        meta={
-          <Meta
-            title="instudia"
-            description="instudia official website | computer training institute"
-          />
-        }
-      >
-        <div className="bg-white">
-          <main>
-            <LandingTop />
-            <CardSection />
-            <TestimonialWithStats stats={stats} />
-            <CTAWithText />
-          </main>
-        </div>
-      </Main>
-    </PageLayout>
+    <AnimateSharedLayout>
+      <AnimatePresence>
+        (
+        <PageLayout>
+          <Main
+            meta={
+              <Meta
+                title="instudia"
+                description="instudia official website | computer training institute"
+              />
+            }
+          >
+            <div className="bg-white">
+              <main>
+                <LandingTop />
+                <CardSection />
+                <TestimonialWithStats stats={stats} />
+                <CTAWithText />
+              </main>
+            </div>
+          </Main>
+        </PageLayout>
+        )
+      </AnimatePresence>
+    </AnimateSharedLayout>
   );
 };
 

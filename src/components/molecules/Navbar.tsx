@@ -16,7 +16,7 @@ import {
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
-import { routes } from '@/routes';
+import { routes, slugs } from '@/routes';
 import { classNames } from '@/utils/classnames';
 
 const navigation = [
@@ -30,22 +30,31 @@ const solutions = [
     name: 'Diploma in Computer Applications',
     description:
       'Get a better understanding of different prospects with computer.',
-    href: '/courses/dca',
+    href: `${routes.COURSES}/${slugs.DCA}`,
     icon: AcademicCapIcon,
     duration: '6 to 12 months',
   },
   {
     name: 'Tally with GST',
     description: `Understand the concepts of GST and implement the same as per statutory obligations. Learn processing of GST transactions through Tally.`,
-    href: '/courses/gst',
+    href: `${routes.COURSES}/${slugs.GST}`,
     icon: CalculatorIcon,
     duration: '3 to 5 months',
   },
   {
-    name: 'Programming with Python',
+    name: 'Programming with Python I',
     description:
       'One of the most fastest-growing programming languages in the world driven by its application in machine learning.',
-    href: '/courses/python',
+    href: `${routes.COURSES}/${slugs.PYTHON1}`,
+    icon: DesktopComputerIcon,
+    duration: '3 to 6 months',
+    variant: 'Beginner, Intermediate and Advanced',
+  },
+  {
+    name: 'Programming with Python II',
+    description:
+      'One of the most fastest-growing programming languages in the world driven by its application in machine learning.',
+    href: `${routes.COURSES}/${slugs.PYTHON2}`,
     icon: DesktopComputerIcon,
     duration: '3 to 6 months',
     variant: 'Beginner, Intermediate and Advanced',
@@ -53,7 +62,7 @@ const solutions = [
   {
     name: 'And Many More...',
     description: "There's lot more we have got to offer. Click to explore 👉",
-    href: '#',
+    href: routes.COURSES,
     icon: ChevronDoubleRightIcon,
   },
 ];
@@ -122,42 +131,44 @@ export default function Navbar() {
                           <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black">
                             <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
                               {solutions.map((item) => (
-                                <a
+                                <Link
                                   key={item.name}
-                                  href={item.href}
-                                  className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                                  href="/courses/*"
+                                  as={item.href}
                                 >
-                                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-yellow-600 text-white sm:h-12 sm:w-12">
-                                    <item.icon
-                                      className="h-6 w-6"
-                                      aria-hidden="true"
-                                    />
-                                  </div>
-                                  <div className="ml-4">
-                                    <p className="!mt-0 text-base font-medium text-gray-900">
-                                      {item.name}
-                                    </p>
-                                    <p className="mt-1 text-sm text-gray-500">
-                                      {item.description}
-                                    </p>
-                                    {item.duration && (
-                                      <p className="!mt-0 text-sm text-gray-500">
-                                        <span className="font-bold">
-                                          Duration:{' '}
-                                        </span>
-                                        {item.duration}
+                                  <a className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-yellow-600 text-white sm:h-12 sm:w-12">
+                                      <item.icon
+                                        className="h-6 w-6"
+                                        aria-hidden="true"
+                                      />
+                                    </div>
+                                    <div className="ml-4">
+                                      <p className="!mt-0 text-base font-medium text-gray-900">
+                                        {item.name}
                                       </p>
-                                    )}
-                                    {item.variant && (
-                                      <p className="!mt-0 text-sm text-gray-500">
-                                        <span className="font-bold">
-                                          Levels:{' '}
-                                        </span>
-                                        {item.variant}
+                                      <p className="mt-1 text-sm text-gray-500">
+                                        {item.description}
                                       </p>
-                                    )}
-                                  </div>
-                                </a>
+                                      {item.duration && (
+                                        <p className="!mt-0 text-sm text-gray-500">
+                                          <span className="font-bold">
+                                            Duration:{' '}
+                                          </span>
+                                          {item.duration}
+                                        </p>
+                                      )}
+                                      {item.variant && (
+                                        <p className="!mt-0 text-sm text-gray-500">
+                                          <span className="font-bold">
+                                            Levels:{' '}
+                                          </span>
+                                          {item.variant}
+                                        </p>
+                                      )}
+                                    </div>
+                                  </a>
+                                </Link>
                               ))}
                             </div>
                           </div>
