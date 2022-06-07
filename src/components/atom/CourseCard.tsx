@@ -24,7 +24,7 @@ export default function CourseCard({
           alt=""
         />
       </div>
-      <div className="flex flex-1 flex-col justify-between bg-white p-6">
+      <div className="flex flex-1 flex-col justify-between bg-white p-6 hover:bg-slate-100">
         <div className="flex-1">
           <p className="text-sm font-medium text-yellow-600">
             <Link href={`/${slug}`}>

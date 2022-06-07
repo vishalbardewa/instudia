@@ -3,6 +3,8 @@ import Link from 'next/link';
 
 import { ICourse } from '@/interfaces';
 
+import RoundedBadge from '../atom/RoundedBadge';
+
 export default function ImageBanner({
   title,
   description,
@@ -21,10 +23,11 @@ export default function ImageBanner({
       </div>
       <div className="relative mx-auto max-w-7xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16">
         <div className="mx-auto mt-24 max-w-2xl lg:mr-0 lg:ml-auto lg:mt-0 lg:w-1/2 lg:max-w-none lg:pl-10">
-          <div>
+          <div className="flex justify-between">
             <div className="flex h-12 w-12 items-center justify-center rounded-md bg-yellow-500 text-white">
               <UsersIcon className="h-6 w-6" aria-hidden="true" />
             </div>
+            <RoundedBadge text="Bestseller" color="white" />
           </div>
           <h2 className="mt-6 text-3xl font-extrabold text-gray-900 sm:text-4xl">
             <Link href={`/${slug}`}>

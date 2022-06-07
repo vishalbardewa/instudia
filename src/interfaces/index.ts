@@ -30,3 +30,8 @@ export interface ICourse {
   showOnCoursesDropdown?: boolean;
   icon?: any;
 }
+
+export interface IRoundedBadge {
+  text: string;
+  color: string;
+}
