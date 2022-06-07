@@ -6,6 +6,7 @@ import TestimonialWithStats from '@/components/molecules/TestimonialWithStats';
 import LandingTop from '@/components/organisms/LandingTop';
 import { Meta } from '@/layout/Meta';
 import PageLayout from '@/layout/PageLayout';
+import { routes } from '@/routes';
 import { Main } from '@/templates/Main';
 
 const stats = [
@@ -34,7 +35,7 @@ const Index = () => {
                 <LandingTop />
                 <CardSection />
                 <TestimonialWithStats stats={stats} />
-                <CTAWithText />
+                <CTAWithText href={routes.COURSES} />
               </main>
             </div>
           </Main>
