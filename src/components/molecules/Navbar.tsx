@@ -60,7 +60,7 @@ const solutions = [
     variant: 'Beginner, Intermediate and Advanced',
   },
   {
-    name: 'And Many More...',
+    name: 'All Courses',
     description: "There's lot more we have got to offer. Click to explore 👉",
     href: routes.COURSES,
     icon: ChevronDoubleRightIcon,
