@@ -22,7 +22,7 @@ import { classNames } from '@/utils/classnames';
 const navigation = [
   { name: 'Community', href: routes.COMMUNITY },
   { name: 'About', href: routes.ABOUT_US },
-  { name: 'Contact Us', href: '#' },
+  { name: 'Contact Us', href: routes.CONTACT },
 ];
 
 const solutions = [
