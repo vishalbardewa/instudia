@@ -79,3 +79,9 @@ export default function ContactUs() {
     </div>
   );
 }
+
+// TODO
+// Workshop Page
+// Photo gallery
+// Team Page
+// Card Modal for Workshop

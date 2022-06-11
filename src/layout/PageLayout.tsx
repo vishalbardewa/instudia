@@ -27,6 +27,7 @@ export default function PageLayout(props: any) {
           {props.children}
         </motion.main>
         <FloatingWhatsApp
+          className="z-10"
           phoneNumber="+918798587779"
           accountName="instudia"
           avatar="/assets/images/instudia-square.png"

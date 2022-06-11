@@ -35,3 +35,28 @@ export interface IRoundedBadge {
   text: string;
   color: string;
 }
+
+export interface ISupportLinks {
+  name: string;
+  href?: string;
+  description: string;
+  icon: any;
+}
+
+export interface IFeatureCardSection {
+  mainText: string;
+  secondaryText: string;
+  highlightText?: string;
+  supportLinks: ISupportLinks[];
+}
+
+export interface ILargeImageSplitCard {
+  cardHeader: string;
+  cardBody: string;
+}
+
+export interface ISimpleOnBrand {
+  mainText: string;
+  secondaryText: string;
+  className?: string;
+}
