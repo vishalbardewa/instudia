@@ -7,7 +7,7 @@ export default function LargeImageSplitCard({
   cardBody,
 }: ILargeImageSplitCard) {
   return (
-    <div className="relative bg-white">
+    <div className="relative bg-white shadow-xl sm:overflow-hidden sm:rounded-2xl">
       <div className="h-56 bg-yellow-600 sm:h-72 lg:absolute lg:left-0 lg:h-full lg:w-1/2">
         <img
           className="h-full w-full object-cover"

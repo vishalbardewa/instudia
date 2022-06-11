@@ -9,7 +9,7 @@ export default function FeatureCardSection({
   return (
     <div className="bg-white">
       {/* Header */}
-      <div className="relative bg-gray-800 pb-32">
+      <div className="relative bg-gray-800 pb-32 shadow-xl sm:overflow-hidden sm:rounded-2xl">
         <div className="absolute inset-0">
           <img
             className="h-full w-full object-cover"
