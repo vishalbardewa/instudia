@@ -19,7 +19,7 @@ const stats = [
 const Index = () => {
   return (
     <AnimateSharedLayout>
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         (
         <PageLayout>
           <Main

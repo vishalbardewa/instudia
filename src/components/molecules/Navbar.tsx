@@ -14,6 +14,7 @@ import {
   DesktopComputerIcon,
 } from '@heroicons/react/solid';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { routes, slugs } from '@/routes';
@@ -67,6 +68,14 @@ const solutions = [
   },
 ];
 
+const staggeredAnimation = {
+  animate: {
+    transition: {
+      staggeredChildren: 0.1,
+    },
+  },
+};
+
 export default function Navbar() {
   return (
     <>
@@ -76,11 +85,15 @@ export default function Navbar() {
             <>
               <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8">
                 <div className="flex justify-start lg:w-0 lg:flex-1">
-                  <motion.div animate={{ x: 10 }}>
+                  <motion.div variants={staggeredAnimation}>
                     <Link href="/">
                       <a>
                         <span className="sr-only">instudia</span>
-                        <img
+                        <motion.img
+                          initial={{ x: 200, opacity: 0 }}
+                          animate={{ x: 0, opacity: 1 }}
+                          exit={{ x: 200, opacity: 0 }}
+                          transition={{ type: 'spring', stiffness: 30 }}
                           className="h-10 w-auto sm:h-14"
                           src="/assets/images/instudia-logo.png"
                           alt=""
@@ -208,10 +221,11 @@ export default function Navbar() {
                     <div className="px-5 pt-5 pb-6">
                       <div className="flex items-center justify-between">
                         <div>
-                          <img
+                          <Image
                             className="h-8 w-auto"
                             src="/assets/images/instudia-logo.png"
-                            alt="Workflow"
+                            alt="Instudia"
+                            layout="fill"
                           />
                         </div>
                         <div className="-mr-2">

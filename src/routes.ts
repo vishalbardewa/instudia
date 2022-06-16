@@ -3,6 +3,7 @@ export const routes = {
   COMMUNITY: '/community',
   COURSES: '/courses',
   CONTACT: '/contact',
+  WORKSHOPS: '/workshops',
 };
 
 export const slugs = {

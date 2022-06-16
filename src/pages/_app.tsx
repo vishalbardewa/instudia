@@ -5,6 +5,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Footer from '@/components/molecules/Footer';
 import Navbar from '@/components/molecules/Navbar';
 import TopBanner from '@/components/molecules/TopBanner';
+import { routes } from '@/routes';
 
 import '../styles/global.css';
 
@@ -24,11 +25,11 @@ const theme = {
 
 const footerNavigation = {
   main: [
-    { name: 'About', href: '#' },
+    { name: 'About', href: `${routes.ABOUT_US}` },
     { name: 'Blog', href: '#' },
     { name: 'Jobs', href: '#' },
     { name: 'Press', href: '#' },
-    { name: 'Accessibility', href: '#' },
+    { name: 'Workshops', href: `${routes.WORKSHOPS}` },
     { name: 'Partners', href: '#' },
   ],
   social: [
@@ -47,7 +48,7 @@ const footerNavigation = {
     },
     {
       name: 'Instagram',
-      href: '#',
+      href: 'https://www.instagram.com/instudia_nagaland/',
       icon: (props: any) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
