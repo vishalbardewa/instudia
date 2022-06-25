@@ -72,6 +72,7 @@ export default function InNewsCard({ mainText }: any) {
             <div className="min-w-0 flex-1">
               <a
                 href={person.link}
+                target="_blank"
                 className="focus:outline-none"
                 rel="noreferrer"
               >
