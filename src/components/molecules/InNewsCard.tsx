@@ -60,9 +60,9 @@ export default function InNewsCard({ mainText }: any) {
         {people.map((person) => (
           <div
             key={person.email}
-            className="relative flex items-center space-x-3 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-yellow-500 focus-within:ring-offset-2 hover:border-gray-400"
+            className="relative flex flex-col items-center space-x-3 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-yellow-500 focus-within:ring-offset-2 hover:border-gray-400 lg:flex-row"
           >
-            <div className="shrink-0">
+            <div className="mb-5 shrink-0 lg:mb-0">
               <img
                 className={`h-${person.imageDimensions.h} w-${person.imageDimensions.w}`}
                 src={person.imageUrl}
