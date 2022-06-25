@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 const MEDIA_LOGO = {
   MORUNG_EXPRESS:
     'https://morungexpress.com/public/front/images/morung_logo.png',
@@ -18,6 +20,7 @@ const people = [
       h: 12,
       w: 32,
     },
+    dateOfPublication: moment('2022-06-25').format('LL'),
   },
   {
     name: 'Workshop on Photography and Python Programming',
@@ -29,6 +32,7 @@ const people = [
       h: 12,
       w: 32,
     },
+    dateOfPublication: moment('2022-06-25').format('LL'),
   },
   {
     name: 'Instudia organises workshop on Photography',
@@ -40,6 +44,7 @@ const people = [
       h: 6,
       w: 16,
     },
+    dateOfPublication: moment('2022-06-25').format('LL'),
   },
 ];
 
@@ -66,7 +71,6 @@ export default function InNewsCard({ mainText }: any) {
             </div>
             <div className="min-w-0 flex-1">
               <a
-                target="_blank"
                 href={person.link}
                 className="focus:outline-none"
                 rel="noreferrer"
@@ -77,6 +81,18 @@ export default function InNewsCard({ mainText }: any) {
                 </p>
                 <p className="!my-0 truncate text-sm text-gray-500">
                   {person.role}
+                </p>
+                <p className="!my-0 truncate text-sm text-gray-500">
+                  {person.dateOfPublication}
+                </p>
+                <a
+                  href={person.link}
+                  target="_blank"
+                  className=""
+                  rel="noreferrer"
+                ></a>
+                <p className="!my-0 truncate text-sm text-yellow-500">
+                  Read the whole story
                 </p>
               </a>
             </div>
