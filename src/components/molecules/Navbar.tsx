@@ -14,7 +14,6 @@ import {
   DesktopComputerIcon,
 } from '@heroicons/react/solid';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { routes, slugs } from '@/routes';
@@ -221,11 +220,10 @@ export default function Navbar() {
                     <div className="px-5 pt-5 pb-6">
                       <div className="flex items-center justify-between">
                         <div>
-                          <Image
+                          <img
                             className="h-8 w-auto"
                             src="/assets/images/instudia-logo.png"
                             alt="Instudia"
-                            layout="fill"
                           />
                         </div>
                         <div className="-mr-2">

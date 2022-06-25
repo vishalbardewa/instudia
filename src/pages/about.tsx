@@ -6,6 +6,7 @@ import {
 
 import { whatDoWeDoContent, whyDoWeDoContent } from '@/about_us';
 import FeatureCardSection from '@/components/molecules/FeatureCardSection';
+import InNewsCard from '@/components/molecules/InNewsCard';
 import LargeImageSplitCard from '@/components/molecules/LargeImageSplitCard';
 import SimpleOnBrand from '@/components/molecules/SimpleOnBrand';
 import { Meta } from '@/layout/Meta';
@@ -65,11 +66,11 @@ const About = () => (
       secondaryText={whyDoWeDoContent}
     />
     {/* TODO: Update this section when in news */}
-    {/* <PageLayout>
+    <PageLayout>
       <div className="mt-8">
         <InNewsCard mainText="instudia in news" />
       </div>
-    </PageLayout> */}
+    </PageLayout>
   </Main>
 );
 

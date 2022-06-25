@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 
 export default function UnderConstruction() {
   return (
@@ -14,11 +13,10 @@ export default function UnderConstruction() {
         whileTap={{ scale: 0.9 }}
         className="relative mx-auto h-[20rem] w-[20rem] md:h-[30rem] md:w-[30rem] lg:h-[50rem] lg:w-[50rem]"
       >
-        <Image
+        <img
           className="h-auto w-auto object-cover"
           src="/assets/images/coming-soon.png"
           alt="Instudia"
-          layout="fill"
         />
       </motion.div>
     </div>

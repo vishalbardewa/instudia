@@ -1,68 +1,44 @@
+const MEDIA_LOGO = {
+  MORUNG_EXPRESS:
+    'https://morungexpress.com/public/front/images/morung_logo.png',
+  NAGALAND_POST:
+    'https://www.nagalandpost.com/wp-content/uploads/2021/09/Footlogo.png',
+  EASTERN_MIRROR:
+    'https://www.easternmirrornagaland.com/wp-content/uploads/2019/09/logo.jpg',
+};
+
 const people = [
   {
-    name: 'Nagaland Post',
-    email: 'leslie.alexander@example.com',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://www.nagalandpost.com/wp-content/uploads/2021/09/Footlogo.png',
+    name: 'Instudia organises workshop on Photography',
+    link: 'https://www.nagalandpost.com/index.php/instudia-organises-workshop-on-photography/',
+    email: '',
+    role: 'Nagaland Post',
+    imageUrl: MEDIA_LOGO.NAGALAND_POST,
     imageDimensions: {
       h: 12,
       w: 32,
     },
   },
   {
-    name: 'Nagaland Post',
-    email: 'leslie.alexander@example.com',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://www.nagalandpost.com/wp-content/uploads/2021/09/Footlogo.png',
+    name: 'Workshop on Photography and Python Programming',
+    email: '',
+    link: 'https://morungexpress.com/workshop-on-photography-and-python-programming',
+    role: 'Morung Express',
+    imageUrl: MEDIA_LOGO.MORUNG_EXPRESS,
     imageDimensions: {
       h: 12,
       w: 32,
     },
   },
   {
-    name: 'Nagaland Post',
-    email: 'leslie.alexander@example.com',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://www.nagalandpost.com/wp-content/uploads/2021/09/Footlogo.png',
+    name: 'Instudia organises workshop on Photography',
+    email: '',
+    link: 'https://easternmirrornagaland.com/nagaland-instudia-organises-workshop-on-photography/',
+    role: 'Eastern Mirror',
+    imageUrl: MEDIA_LOGO.EASTERN_MIRROR,
     imageDimensions: {
-      h: 12,
-      w: 32,
-    },
-  },
-  {
-    name: 'Nagaland Post',
-    email: 'leslie.alexander@example.com',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://www.nagalandpost.com/wp-content/uploads/2021/09/Footlogo.png',
-    imageDimensions: {
-      h: 12,
-      w: 32,
-    },
-  },
-  {
-    name: 'Nagaland Post',
-    email: 'leslie.alexander@example.com',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://www.nagalandpost.com/wp-content/uploads/2021/09/Footlogo.png',
-    imageDimensions: {
-      h: 12,
-      w: 32,
-    },
-  },
-  {
-    name: 'Nagaland Post',
-    email: 'leslie.alexander@example.com',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://www.nagalandpost.com/wp-content/uploads/2021/09/Footlogo.png',
-    imageDimensions: {
-      h: 12,
-      w: 32,
+      h: 6,
+      w: 16,
     },
   },
 ];
@@ -85,11 +61,16 @@ export default function InNewsCard({ mainText }: any) {
               <img
                 className={`h-${person.imageDimensions.h} w-${person.imageDimensions.w}`}
                 src={person.imageUrl}
-                alt=""
+                alt="Nagaland Post Logo"
               />
             </div>
             <div className="min-w-0 flex-1">
-              <a href="#" className="focus:outline-none">
+              <a
+                target="_blank"
+                href={person.link}
+                className="focus:outline-none"
+                rel="noreferrer"
+              >
                 <span className="absolute inset-0" aria-hidden="true" />
                 <p className="!my-0 text-sm font-medium text-gray-900">
                   {person.name}
