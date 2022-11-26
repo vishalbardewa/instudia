@@ -28,7 +28,7 @@ export const getServerSideProps = async (context: any) => {
   const { slug } = context.params;
   const item = fs.readFileSync(
     `${process.cwd()}/src/contents/${slug}.md`,
-    'utf-8'
+    'utf8'
   );
 
   return {
