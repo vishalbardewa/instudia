@@ -39,3 +39,10 @@ export const getServerSideProps = async (context: any) => {
 };
 
 export default ContentPage;
+
+export async function getStaticPaths() {
+  return {
+    paths: [{ params: { slug: 'privacy-policy' } }, { params: { slug: 'tc' } }],
+    fallback: false,
+  };
+}
