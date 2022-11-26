@@ -22,7 +22,9 @@ const ContentPage = (props: any) => {
   );
 };
 
-export const getServerSideProps = async (context: any) => {
+export default ContentPage;
+
+export async function getStaticProps(context: any) {
   // eslint-disable-next-line global-require
   const fs = require('fs');
   const { slug } = context.params;
@@ -36,6 +38,11 @@ export const getServerSideProps = async (context: any) => {
       item,
     },
   };
-};
+}
 
-export default ContentPage;
+export async function getStaticPaths() {
+  return {
+    paths: [{ params: { slug: 'privacy-policy' } }, { params: { slug: 'tc' } }],
+    fallback: false,
+  };
+}
