@@ -31,14 +31,7 @@ export default function ImageBanner({
           </div>
           <h2 className="mt-6 text-3xl font-extrabold text-gray-900 sm:text-4xl">
             <Link href={`/${slug}`}>
-              <a
-                target="_blank"
-                href={`/${slug}`}
-                className="text-black"
-                rel="noreferrer"
-              >
-                {title}
-              </a>
+              <span className="text-black">{title}</span>
             </Link>
           </h2>
           <p className="mt-6 text-lg text-gray-500">{description}</p>

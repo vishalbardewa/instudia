@@ -28,14 +28,9 @@ export default function CourseCard({
         <div className="flex-1">
           <p className="text-sm font-medium text-yellow-600">
             <Link href={`/${slug}`}>
-              <a
-                target="_blank"
-                href={`/${slug}`}
-                className="text-yellow-600 hover:underline"
-                rel="noreferrer"
-              >
+              <span className="text-yellow-600 hover:underline">
                 {category.name}
-              </a>
+              </span>
             </Link>
           </p>
           <a href={`/courses/${slug}`} className="mt-2 block">

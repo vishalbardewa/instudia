@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 export default function UnderConstruction() {
   return (
-    <div className="container p-10">
-      <h1 className="text-center text-xl font-bold">
+    <div className="flex flex-col">
+      <h1 className="mx-10 text-center text-xl font-bold">
         Oops!! We understand your curiosity but this page is under construction
       </h1>
       <motion.div
@@ -17,6 +17,8 @@ export default function UnderConstruction() {
           className="h-auto w-auto object-cover"
           src="/assets/images/coming-soon.png"
           alt="Instudia"
+          height="320px"
+          width="320px"
         />
       </motion.div>
     </div>

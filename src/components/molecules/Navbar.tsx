@@ -86,7 +86,7 @@ export default function Navbar() {
                 <div className="flex justify-start lg:w-0 lg:flex-1">
                   <motion.div variants={staggeredAnimation}>
                     <Link href="/">
-                      <a>
+                      <>
                         <span className="sr-only">instudia</span>
                         <motion.img
                           initial={{ x: 200, opacity: 0 }}
@@ -97,7 +97,7 @@ export default function Navbar() {
                           src="/assets/images/instudia-logo.png"
                           alt=""
                         />
-                      </a>
+                      </>
                     </Link>
                   </motion.div>
                 </div>
@@ -149,7 +149,7 @@ export default function Navbar() {
                                     href="/courses/*"
                                     as={item.href}
                                   >
-                                    <a className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                                    <span className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
                                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-yellow-600 text-white sm:h-12 sm:w-12">
                                         <item.icon
                                           className="h-6 w-6"
@@ -180,7 +180,7 @@ export default function Navbar() {
                                           </p>
                                         )}
                                       </div>
-                                    </a>
+                                    </span>
                                   </Link>
                                 ))}
                               </div>
@@ -193,9 +193,9 @@ export default function Navbar() {
 
                   {navigation.map((item) => (
                     <Link key={item.name} href={item.href}>
-                      <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                      <span className="text-base font-medium text-gray-500 hover:text-gray-900">
                         {item.name}
-                      </a>
+                      </span>
                     </Link>
                   ))}
                 </Popover.Group>
@@ -259,9 +259,9 @@ export default function Navbar() {
                       <div className="grid grid-cols-2 gap-4">
                         {navigation.map((item) => (
                           <Link key={item.name} href={item.href}>
-                            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+                            <span className="text-base font-medium text-gray-500 hover:text-gray-900">
                               {item.name}
-                            </a>
+                            </span>
                           </Link>
                         ))}
                       </div>

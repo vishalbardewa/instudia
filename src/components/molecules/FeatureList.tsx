@@ -57,7 +57,7 @@ const initialActions: IFeatureList[] = [
 export default function FeatureList({ features }: any) {
   const [actions, setActions] = useState(initialActions);
   const addFeatureContent = useCallback(
-    (items) =>
+    (items: any) =>
       items.map((item: any) => ({
         ...item,
         value: features[item.key],
@@ -67,6 +67,7 @@ export default function FeatureList({ features }: any) {
 
   useEffect(() => {
     setActions(addFeatureContent(initialActions));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -95,7 +96,7 @@ export default function FeatureList({ features }: any) {
                   'rounded-lg inline-flex p-3 ring-4 ring-white'
                 )}
               >
-                <action.icon className="h-6 w-6" aria-hidden="true" />
+                {/* <action.icon className="h-6 w-6" aria-hidden="true" /> */}
               </span>
             </div>
             <div className="mt-8">
