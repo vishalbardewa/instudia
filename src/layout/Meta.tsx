@@ -46,6 +46,10 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/favicon.ico`}
           key="favicon"
         />
+        <meta
+          name="facebook-domain-verification"
+          content="urvbmhyylbha59lj50184veppyr476"
+        />
       </Head>
       <NextSeo
         title={props.title}
