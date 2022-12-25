@@ -4,17 +4,26 @@ import { PaperAirplaneIcon } from '@heroicons/react/outline';
 
 interface IIconButton {
   text: string;
-  formLink: string;
+  formLink?: string;
+  buttonSize?: string;
+  textSize?: string;
+  iconSize?: string;
 }
 
-export default function IconButton({ text, formLink }: IIconButton) {
+export default function IconButton({
+  text,
+  formLink,
+  buttonSize = 'px-4 py-2',
+  textSize = 'text-base',
+  iconSize = '5',
+}: IIconButton) {
   return (
     <button
       type="button"
-      className="mt-4 inline-flex items-center rounded-md border border-transparent bg-black px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2"
+      className={`mt-4 inline-flex items-center rounded-md border border-transparent bg-black ${buttonSize} ${textSize} font-medium text-white shadow-sm hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500 focus:ring-offset-2`}
     >
       <a
-        className="text-white"
+        className="text-white hover:border-b-0"
         href={formLink}
         target="_blank"
         rel="noreferrer"
@@ -22,7 +31,10 @@ export default function IconButton({ text, formLink }: IIconButton) {
       >
         {text}
       </a>
-      <PaperAirplaneIcon className="ml-3 -mr-1 h-5 w-5" aria-hidden="true" />
+      <PaperAirplaneIcon
+        className={`h- ml-3 -mr-1${iconSize} w-${iconSize}`}
+        aria-hidden="true"
+      />
     </button>
   );
 }
