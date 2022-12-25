@@ -30,7 +30,7 @@ export default function ImageBanner({
             <RoundedBadge text="Bestseller" color="white" />
           </div>
           <h2 className="mt-6 text-3xl font-extrabold text-gray-900 sm:text-4xl">
-            <Link href={`/${slug}`}>
+            <Link href={`/courses/${slug}`}>
               <span className="text-black">{title}</span>
             </Link>
           </h2>
