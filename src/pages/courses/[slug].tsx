@@ -10,6 +10,7 @@ import {
   ClockIcon,
   LibraryIcon,
 } from '@heroicons/react/solid';
+import { v4 as uuidv4 } from 'uuid';
 
 import IconButton from '@/components/atom/IconButton';
 import PageLayout from '@/layout/PageLayout';
@@ -140,7 +141,7 @@ const RelatedCoursesGrid = ({ relatedCourses }: any) => {
       </div>
       <section className="font-light lg:grid lg:grid-cols-2 lg:gap-x-12 lg:gap-y-4">
         {relatedCourses?.map((course: any) => (
-          <div key={Date.now()} className="mt-12 space-y-1 sm:grid-cols-6">
+          <div key={uuidv4()} className="mt-12 space-y-1 sm:grid-cols-6">
             <figure className="relative max-w-xl cursor-pointer">
               <img
                 className="rounded-lg"

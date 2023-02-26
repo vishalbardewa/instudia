@@ -25,13 +25,15 @@
     "react-dom": "^18.2.0",
     "react-floating-whatsapp": "^4.0.5",
     "react-markdown": "^8.0.3",
-    "styled-components": "^5.3.5"
+    "styled-components": "^5.3.5",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.1.0",
     "@types/node": "^17.0.23",
     "@types/react": "^18.0.25",
     "@types/styled-components": "^5.1.25",
+    "@types/uuid": "^9.0.1",
     "@typescript-eslint/eslint-plugin": "^5.16.0",
     "@typescript-eslint/parser": "^5.16.0",
     "autoprefixer": "^10.4.4",

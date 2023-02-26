@@ -2,6 +2,7 @@ import { AnimatePresence, AnimateSharedLayout } from 'framer-motion';
 
 import CTAWithText from '@/components/atom/CTAWithText';
 import CardSection from '@/components/molecules/CardSection';
+import FeatureWithColumns from '@/components/molecules/FeatureWithThreeCoulmns';
 import ReasonStepper from '@/components/molecules/ReasonStepper';
 import Stats from '@/components/molecules/Stats';
 import TestimonialWithStats from '@/components/molecules/TestimonialWithStats';
@@ -38,6 +39,7 @@ const Index = () => {
                 <CardSection />
                 <TestimonialWithStats />
                 <Stats stats={stats} />
+                <FeatureWithColumns />
                 <ReasonStepper />
                 <CTAWithText href={routes.COURSES} />
               </main>
