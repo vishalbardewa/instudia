@@ -44,7 +44,7 @@ export default function FeatureWithColumns() {
           <span className="text-yellow-500">instudians</span>
         </p>
         <p className="mx-auto max-w-prose text-base text-gray-500">
-          instidians get access to exclusive job openings at our partner
+          instudians get access to exclusive job openings at our partner
           companies and guidance + help from our Career Preparation team.
         </p>
         <div className="mt-12">
