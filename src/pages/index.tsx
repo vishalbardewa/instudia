@@ -2,6 +2,8 @@ import { AnimatePresence, AnimateSharedLayout } from 'framer-motion';
 
 import CTAWithText from '@/components/atom/CTAWithText';
 import CardSection from '@/components/molecules/CardSection';
+import ReasonStepper from '@/components/molecules/ReasonStepper';
+import Stats from '@/components/molecules/Stats';
 import TestimonialWithStats from '@/components/molecules/TestimonialWithStats';
 import LandingTop from '@/components/organisms/LandingTop';
 import { Meta } from '@/layout/Meta';
@@ -34,7 +36,9 @@ const Index = () => {
               <main>
                 <LandingTop />
                 <CardSection />
-                <TestimonialWithStats stats={stats} />
+                <TestimonialWithStats />
+                <Stats stats={stats} />
+                <ReasonStepper />
                 <CTAWithText href={routes.COURSES} />
               </main>
             </div>

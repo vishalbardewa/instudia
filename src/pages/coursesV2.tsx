@@ -92,8 +92,8 @@ const relatedCourses = [
 
 const ContentHead = () => (
   <section className="mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-16">
-    <div className="lg:grid lg:grid-cols-12 lg:gap-8">
-      <div className="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
+    <div className="grid md:grid-cols-2 md:gap-1 lg:grid-cols-12 lg:gap-8">
+      <div className="sm:text-center md:mx-auto md:max-w-2xl md:text-left lg:col-span-6 lg:text-left">
         <h1>
           <span className="block text-base font-semibold text-gray-500 sm:text-lg lg:text-base xl:text-lg">
             Technology
@@ -105,9 +105,9 @@ const ContentHead = () => (
         </h1>
 
         <div className="relative sm:mt-10 lg:mt-20 lg:grid lg:grid-cols-3 lg:gap-x-12">
-          <dl className="mt-10 space-y-10 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 sm:space-y-0 lg:col-span-4 lg:mt-0 lg:gap-y-6">
+          <dl className="mt-10 space-y-10 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-8 sm:gap-y-10 sm:space-y-0 lg:col-span-4 lg:mt-0 lg:gap-y-6">
             {features.map((feature) => (
-              <div key={feature.name} className="flex">
+              <div key={feature.name} className="flex text-left">
                 <dt>
                   <div className="flex h-12 w-12 items-center rounded-md bg-white text-yellow-700">
                     <feature.icon className="h-6 w-6" aria-hidden="true" />
@@ -127,7 +127,7 @@ const ContentHead = () => (
         </div>
         <p className="mt-6 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"></p>
       </div>
-      <div className="relative mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none lg:items-center">
+      <div className="relative mt-12 sm:mx-auto sm:max-w-lg md:flex md:self-center lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none lg:items-center">
         <div className="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-xl">
           <span className="sr-only">Watch our video to learn more</span>
           <span className="absolute top-3 right-2 inline-flex items-center rounded-full bg-yellow-100 px-3 py-0.5 text-sm font-medium text-yellow-800">
@@ -163,7 +163,7 @@ const FourParaGrid = () => (
         </span>
       </div>
     </div>
-    <section className="font-light lg:grid lg:grid-cols-2 lg:gap-x-24 lg:gap-y-4">
+    <section className="text-base font-light lg:grid lg:grid-cols-2 lg:gap-x-24 lg:gap-y-4">
       {reasonsWhy.map((reason) => (
         <p className="sm:grid-cols-2" key={reason.id}>
           {reason.description}
@@ -177,7 +177,7 @@ const RelatedCoursesGrid = () => (
   <div className="mt-48 px-4 font-bold">
     <div className="relative">
       <div className="absolute inset-0 flex items-center" aria-hidden="true">
-        <div className="w-full border-t border-gray-300" />
+        <div className="w-full border-t border-gray-300 lg:w-full" />
       </div>
       <div className="relative flex justify-center">
         <span className="bg-white px-3 text-2xl font-medium text-gray-900">

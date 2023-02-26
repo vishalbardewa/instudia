@@ -4,7 +4,7 @@ const MEDIA_LOGO = {
   MORUNG_EXPRESS:
     'https://morungexpress.com/public/front/images/morung_logo.png',
   NAGALAND_POST:
-    'https://www.nagalandpost.com/wp-content/uploads/2021/09/Footlogo.png',
+    'https://nagalandpost.com/wp-content/uploads/2021/12/Footlogo-300x69-1-e1667399626292.png',
   EASTERN_MIRROR:
     'https://www.easternmirrornagaland.com/wp-content/uploads/2019/09/logo.jpg',
 };

@@ -10,6 +10,7 @@ export const routes = {
 
 export const slugs = {
   DCA: 'dca',
+  PGDCA: 'pgdca',
   GST: 'gst',
   TALLY: 'tally',
   PYTHON1: 'python-level-1',

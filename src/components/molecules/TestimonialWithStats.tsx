@@ -1,17 +1,6 @@
 import React from 'react';
 
-interface IStatProps {
-  label: string;
-  value: string;
-}
-
-interface ITestimonialWithStatsProps {
-  stats: Array<IStatProps>;
-}
-
-export default function TestimonialWithStats({
-  stats,
-}: ITestimonialWithStatsProps) {
+export default function TestimonialWithStats() {
   return (
     <div className="relative mt-1">
       <div className="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:items-start lg:gap-24 lg:px-8">
@@ -58,42 +47,32 @@ export default function TestimonialWithStats({
             <div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
               <img
                 className="absolute inset-0 h-full w-full object-cover"
-                src="/assets/images/instudia-square.png"
+                src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                 alt="instudia"
               />
               <div className="absolute inset-0 bg-yellow-500 mix-blend-multiply" />
               <div className="from-white-600 via-white-600 absolute inset-0 bg-gradient-to-t opacity-90" />
               <div className="relative px-8">
-                <div>
-                  <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/workcation.svg?color=white"
-                    alt="Working on content"
-                  />
-                </div>
                 <blockquote className="mt-8">
                   <div className="relative text-lg font-medium text-white md:grow">
                     <svg
                       className="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 text-rose-400"
-                      fill="currentColor"
+                      fill="grey"
                       viewBox="0 0 32 32"
                       aria-hidden="true"
                     >
                       <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
                     </svg>
-                    <p className="relative">
-                      Content to soon be here for now its just Lorem ipsum dolor
-                      sit amet consectetur, adipisicing elit. Voluptates
-                      dignissimos accusantium dolorem provident fugiat, impedit
-                      repudiandae laboriosam autem quam dicta natus, illum
-                      laborum, ducimus assumenda asperiores ipsa nihil debitis
-                      esse?
+                    <p className="relative font-light">
+                      We believe that education is the key to unlocking
+                      potential and creating opportunities for a better future.
+                      Join us today and let us help you achieve your dreams!
                     </p>
                   </div>
 
                   <footer className="mt-4">
-                    <p className="text-base font-semibold text-rose-200">
-                      Team members from instudia
+                    <p className="text-base font-bold text-white">
+                      Elevate your skills, elevate your future - with instudia
                     </p>
                   </footer>
                 </blockquote>
@@ -106,51 +85,26 @@ export default function TestimonialWithStats({
           {/* Content area */}
           <div className="pt-12 sm:pt-16 lg:pt-20">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              On a mission to empower teams
+              Driven by Ambition, Growth by Skills
             </h2>
             <div className="mt-6 space-y-6 text-gray-500">
               <p className="text-lg">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc
-                nisl netus morbi vel porttitor vitae ut. Amet vitae fames
-                senectus vitae.
+                Our mission is to empower unemployed and unskilled youth with
+                industry-specific courses that will impact their lives and open
+                up new job opportunities. We believe that everyone deserves a
+                chance to succeed, and we are committed to providing the
+                resources and training necessary to make that happen.
               </p>
               <p className="text-base leading-7">
-                Sollicitudin tristique eros erat odio sed vitae, consequat
-                turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros
-                eu viverra donec ut volutpat donec laoreet quam urna.
-                Sollicitudin tristique eros erat odio sed vitae, consequat
-                turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros
-                eu viverra donec ut volutpat donec laoreet quam urna.
-              </p>
-              <p className="text-base leading-7">
-                Rhoncus nisl, libero egestas diam fermentum dui. At quis
-                tincidunt vel ultricies. Vulputate aliquet velit faucibus
-                semper. Pellentesque in venenatis vestibulum consectetur nibh
-                id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-                fermentum lacus in. Viverra.
+                Our institute offers a wide range of computer courses designed
+                to prepare students for success in today&apos;s job market. We
+                offer courses in areas such as web development, graphic design,
+                data analysis, and more. Each course is tailored to meet the
+                specific needs of the industry, ensuring that our students are
+                equipped with the skills and knowledge necessary to excel in
+                their chosen field.
               </p>
             </div>
-          </div>
-
-          {/* Stats section */}
-          <div className="mt-10">
-            <dl className="grid grid-cols-2 gap-x-4 gap-y-8">
-              {stats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="border-t-2 border-gray-100 pt-6"
-                >
-                  <dt className="text-base font-medium text-gray-500">
-                    {stat.label}
-                  </dt>
-                  <dd className="text-3xl font-extrabold tracking-tight text-gray-900">
-                    {stat.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
           </div>
         </div>
       </div>
