@@ -28,8 +28,8 @@ const Index = () => {
           <Main
             meta={
               <Meta
-                title="instudia"
-                description="instudia official website | computer training institute"
+                title="instudia - empowering lives through skill-based trainings"
+                description="A Premier Computer and Skill Training Institute in Dimapur, Nagaland. Boost your skills and career with our cutting-edge courses in programming, web development, project management, skill development, and digital marketing. Join us for hands-on training from industry experts and unleash your full potential."
               />
             }
           >
