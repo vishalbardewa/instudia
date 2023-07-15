@@ -57,9 +57,9 @@ export default function InNewsCard({ mainText }: any) {
         </h1>
       </div>
       <div className="mx-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
-        {people.map((person) => (
+        {people.map((person, idx) => (
           <div
-            key={person.email}
+            key={`${person.email}${idx}`}
             className="relative flex flex-col items-center space-x-3 rounded-lg border border-gray-300 bg-white px-6 py-5 shadow-sm focus-within:ring-2 focus-within:ring-yellow-500 focus-within:ring-offset-2 hover:border-gray-400 lg:flex-row"
           >
             <div className="mb-5 shrink-0 lg:mb-0">

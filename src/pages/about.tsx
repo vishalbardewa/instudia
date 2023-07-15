@@ -9,9 +9,7 @@ import FeatureCardSection from '@/components/molecules/FeatureCardSection';
 import InNewsCard from '@/components/molecules/InNewsCard';
 import LargeImageSplitCard from '@/components/molecules/LargeImageSplitCard';
 import SimpleOnBrand from '@/components/molecules/SimpleOnBrand';
-import { Meta } from '@/layout/Meta';
 import PageLayout from '@/layout/PageLayout';
-import { Main } from '@/templates/Main';
 
 const aboutUsBody = `instudia is a technology focused education training centre enabling talents to acquire skills which are in-demand with regards current job market scenario.`;
 
@@ -40,15 +38,11 @@ const infoCardLinks = [
 ];
 
 const About = () => (
-  <Main
-    meta={
-      <Meta
-        title="About Us | instudia"
-        description="About us page for instudia"
-      />
-    }
-  >
-    <PageLayout>
+  <>
+    <PageLayout
+      metaTitle="About Us | instudia"
+      description="instudia is a dedicated learning platform in Dimapur, Nagaland, with a focus on transforming tech professionals by helping them enhance their skills and advance their careers."
+    >
       <FeatureCardSection
         mainText={`We are `}
         highlightText={'instudia'}
@@ -60,19 +54,18 @@ const About = () => (
         cardHeader="What do we do?"
         cardBody={whatDoWeDoContent}
       />
-    </PageLayout>
-    <SimpleOnBrand
-      className="mt-5"
-      mainText="Why do we do?"
-      secondaryText={whyDoWeDoContent}
-    />
-    {/* TODO: Update this section when in news */}
-    <PageLayout>
+      <SimpleOnBrand
+        className="mt-5"
+        mainText="Why do we do?"
+        secondaryText={whyDoWeDoContent}
+      />
       <div className="mt-8">
         <InNewsCard mainText="instudia in news" />
       </div>
     </PageLayout>
-  </Main>
+
+    {/* TODO: Update this section when in news */}
+  </>
 );
 
 export default About;

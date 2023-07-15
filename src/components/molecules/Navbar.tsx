@@ -146,7 +146,7 @@ export default function Navbar() {
                                 {solutions.map((item) => (
                                   <Link
                                     key={item.name}
-                                    href="/courses/*"
+                                    href={item.href}
                                     as={item.href}
                                   >
                                     <span className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
