@@ -13,13 +13,14 @@ import { Meta } from '@/layout/Meta';
 import PageLayout from '@/layout/PageLayout';
 import { Main } from '@/templates/Main';
 
-const aboutUsBody = `instudia is a technology focussed education training centre enabling talents to acquire skills which are in-demand with regards current job market scenario.`;
+const aboutUsBody = `instudia is a technology focused education training centre enabling talents to acquire skills which are in-demand with regards current job market scenario.`;
 
 const infoCardLinks = [
   {
     name: 'Association',
     description: `
-    Associated with 
+    Associated with
+    AISECT
     National Institute For Advanced Computer Technology (NIACT)
     ISO 9001:2015 Certified  
     `,
