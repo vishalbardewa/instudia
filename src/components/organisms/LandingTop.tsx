@@ -56,42 +56,42 @@ export default function LandingTop() {
               <p className="text-center text-sm font-semibold uppercase tracking-wide text-gray-500">
                 Affiliations received from Esteemed Institutes.
               </p>
-              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+              <div className="mt-6 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-4">
+                <div className=" col-span-1 flex justify-center grayscale hover:grayscale-0 md:col-span-2 lg:col-span-1">
                   <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg"
-                    alt="Tuple"
+                    className="h-24"
+                    src="/assets/images/iso-logo.png"
+                    alt="ISO"
                   />
                 </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <div className=" col-span-1 flex items-center justify-center grayscale hover:grayscale-0 md:col-span-2 lg:col-span-1">
                   <img
                     className="h-12"
-                    src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg"
-                    alt="Mirage"
+                    src="/assets/images/aisect.png"
+                    alt="AISECT"
                   />
                 </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+                <div className="col-span-1 flex items-center justify-center grayscale hover:grayscale-0 md:col-span-2 lg:col-span-1">
                   <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                    alt="StaticKit"
+                    className="h-24"
+                    src="/assets/images/niact.png"
+                    alt="National Institute for Advanced Ccomputer Technology"
                   />
                 </div>
-                <div className="col-span-1 flex justify-center md:col-span-2 md:col-start-2 lg:col-span-1">
+                <div className="col-span-1 flex items-center justify-center grayscale hover:grayscale-0 md:col-span-2 md:col-start-2 lg:col-span-1">
                   <img
-                    className="h-12"
-                    src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                    alt="Transistor"
+                    className="h-24"
+                    src="/assets/images/msme-logo.png"
+                    alt="Ministry of Micro, Small and Medium Enterprises"
                   />
                 </div>
-                <div className="col-span-2 flex justify-center md:col-span-2 md:col-start-4 lg:col-span-1">
+                {/* <div className="col-span-2 flex justify-center grayscale hover:grayscale-0 md:col-span-2 md:col-start-4 lg:col-span-1">
                   <img
                     className="h-12"
                     src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
                     alt="Workcation"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

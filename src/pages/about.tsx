@@ -17,9 +17,8 @@ const infoCardLinks = [
   {
     name: 'Association',
     description: `
-    Associated with
-    AISECT
-    National Institute For Advanced Computer Technology (NIACT)
+    Associated with AISECT | 
+    National Institute For Advanced Computer Technology (NIACT) |
     ISO 9001:2015 Certified  
     `,
     icon: PhoneIcon,
