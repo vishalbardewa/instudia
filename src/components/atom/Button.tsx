@@ -6,7 +6,7 @@ export function Button({ invert, href, className, children, ...props }: any) {
   className = clsx(
     className,
     'inline-flex rounded-full px-8 py-4 text-sm font-semibold transition',
-    invert ? 'bg-white' : 'stext-white'
+    invert ? 'bg-white' : 'text-white'
   );
 
   const inner = <span className="relative top-px">{children}</span>;
