@@ -30,6 +30,7 @@ const footerNavigation = {
     { name: 'Jobs', href: '#' },
     { name: 'Workshops', href: `${routes.WORKSHOPS}` },
     { name: 'Partners', href: '#' },
+    { name: 'Careers', href: '/career' },
     { name: 'Privacy Policy', href: `${routes.PRIVACY_POLICY}` },
     { name: 'Terms & Conditions', href: `${routes.TERMS_AND_CONDITIONS}` },
   ],
