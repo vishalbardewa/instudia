@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import Link from 'next/link';
 
 export function Button({ invert, href, className, children, ...props }: any) {
+  // eslint-disable-next-line no-param-reassign
   className = clsx(
     className,
     'inline-flex rounded-full px-8 py-4 text-sm font-semibold transition',
