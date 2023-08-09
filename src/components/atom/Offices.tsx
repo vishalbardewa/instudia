@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-function Office({ name, children, invert = false }) {
+function Office({ name, children, invert = false }: any) {
   return (
     <address
       className={clsx(
