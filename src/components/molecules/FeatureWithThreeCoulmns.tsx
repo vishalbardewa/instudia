@@ -9,13 +9,13 @@ const features = [
   {
     name: 'Help to figure the right role for you',
     description:
-      'Seeking guidance and support from a career counselor or mentor can help you discover and navigate the path to finding the right role for you.',
+      'Consulting with a career counselor or mentor can aid in uncovering and navigating the path toward the ideal job.',
     icon: OfficeBuildingIcon,
   },
   {
     name: 'Help with CV and Interview Prep',
     description:
-      'Professional resume and interview coaching services can provide valuable assistance in crafting an effective CV and preparing for interviews, improving your chances of landing your desired job.',
+      'Professional resume and interview coaching services enhance CV creation and interview readiness',
     icon: LockClosedIcon,
   },
   {
@@ -27,7 +27,7 @@ const features = [
   {
     name: 'Coaching on salary negotiation',
     description:
-      'Working with a career coach who specializes in salary negotiation can help you gain confidence and develop effective strategies to negotiate a fair and competitive compensation package.',
+      'Specialized career coach boosts confidence and equips you with effective strategies for fair salary negotiation.',
     icon: RefreshIcon,
   },
 ];
@@ -50,7 +50,7 @@ export default function FeatureWithColumns() {
         <div className="mt-12">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {features.map((feature) => (
-              <div key={feature.name} className="pt-6">
+              <div key={feature.name} className="h-full pt-6">
                 <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                   <div className="-mt-6">
                     <div>

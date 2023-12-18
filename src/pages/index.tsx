@@ -11,9 +11,9 @@ import { routes } from '@/routes';
 
 const stats = [
   { label: 'Founded', value: '2018' },
-  { label: 'Courses', value: '12' },
-  { label: 'Offices', value: '1' },
-  { label: 'Team Experience', value: '10 Years' },
+  { label: 'Courses', value: '12+' },
+  { label: 'Offices', value: '2' },
+  { label: 'Team Experience', value: '10+ Years' },
 ];
 
 const Index = () => {
