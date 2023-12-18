@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { Button } from './Button';
+
 type CTAProps = {
   href: string;
 };
@@ -15,18 +17,20 @@ export default function CTAWithText({ href }: CTAProps) {
           </span>
         </h2>
         <div className="mt-6 space-y-4 sm:flex sm:space-y-0 sm:space-x-5">
-          <a
-            href={href}
+          <Button
+            target="_blank"
+            href="https://tally.so/r/wvebpA"
             className="flex items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-yellow-600 to-yellow-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:from-yellow-500 hover:to-yellow-700"
           >
             Learn more
-          </a>
-          <a
+          </Button>
+          <Button
+            target="_blank"
             href={href}
             className="flex items-center justify-center rounded-md border border-transparent bg-yellow-50 px-4 py-3 text-base font-medium text-yellow-800 shadow-sm hover:bg-yellow-100"
           >
             Get started
-          </a>
+          </Button>
         </div>
       </div>
     </div>

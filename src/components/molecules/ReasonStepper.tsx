@@ -1,3 +1,5 @@
+import { Button } from '../atom/Button';
+
 export default function ReasonStepper() {
   return (
     <div className="mt-10 bg-white">
@@ -22,12 +24,13 @@ export default function ReasonStepper() {
                     - Irene Rosenfeld
                   </span>
                   <div className="mt-6">
-                    <a
-                      href="#"
+                    <Button
+                      target="_blank"
+                      href="https://tally.so/r/wvebpA"
                       className="inline-block rounded-md border border-transparent bg-yellow-600 py-3 px-8 font-medium text-white hover:bg-yellow-700"
                     >
                       Join Us Today!
-                    </a>
+                    </Button>
                   </div>
                 </div>
               </div>

@@ -197,7 +197,7 @@ const EnrollStrip = () => (
         text="Enroll Now"
         formLink="https://tally.so/r/wMX0Dk"
         buttonSize="px-4 py-2 mt-0 lg:px-8 lg:py-4 lg:mt-4"
-        textSize="text-base lg:text-2xl"
+        textSize="font-extrabold text-base lg:text-2xl"
         iconSize="8"
       />
     </p>

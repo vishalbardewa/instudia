@@ -1,3 +1,5 @@
+import { Button } from '../atom/Button';
+
 export default function LandingTop() {
   return (
     <div className="min-h-screen bg-white">
@@ -31,18 +33,19 @@ export default function LandingTop() {
                   </p>
                   <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                     <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                      <a
-                        href="#"
+                      <Button
+                        target="_blank"
+                        href="https://tally.so/r/wvebpA"
                         className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-slate-700 shadow-sm hover:bg-yellow-50 sm:px-8"
                       >
                         Contact Us
-                      </a>
-                      <a
-                        href="#"
-                        className="flex items-center justify-center rounded-md border border-transparent bg-slate-500 px-4 py-3 text-base font-medium text-white shadow-sm sm:px-8"
+                      </Button>
+                      <Button
+                        className="flex items-center justify-center border border-transparent bg-slate-500 px-4 py-3 text-base font-medium text-white shadow-sm sm:px-8"
+                        href="/courses"
                       >
                         Explore Courses
-                      </a>
+                      </Button>
                     </div>
                   </div>
                 </div>
