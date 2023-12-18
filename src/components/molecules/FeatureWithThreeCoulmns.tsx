@@ -11,24 +11,28 @@ const features = [
     description:
       'Consulting with a career counselor or mentor can aid in uncovering and navigating the path toward the ideal job.',
     icon: OfficeBuildingIcon,
+    color: 'bg-brightyellow',
   },
   {
     name: 'Help with CV and Interview Prep',
     description:
       'Professional resume and interview coaching services enhance CV creation and interview readiness',
     icon: LockClosedIcon,
+    color: 'bg-brandpurple',
   },
   {
     name: 'Referrals to good companies',
     description:
       'Networking with a recruiter or staffing agency can open doors to job opportunities and potential referrals in your field.',
     icon: RefreshIcon,
+    color: 'bg-redhue',
   },
   {
     name: 'Coaching on salary negotiation',
     description:
       'Specialized career coach boosts confidence and equips you with effective strategies for fair salary negotiation.',
     icon: RefreshIcon,
+    color: 'bg-flourescent',
   },
 ];
 
@@ -54,7 +58,9 @@ export default function FeatureWithColumns() {
                 <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                   <div className="-mt-6">
                     <div>
-                      <span className="inline-flex items-center justify-center rounded-md bg-yellow-500 p-3 shadow-lg">
+                      <span
+                        className={`inline-flex items-center justify-center rounded-md ${feature.color} p-3 shadow-lg`}
+                      >
                         <feature.icon
                           className="h-6 w-6 text-white"
                           aria-hidden="true"

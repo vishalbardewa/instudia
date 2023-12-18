@@ -37,6 +37,10 @@ module.exports = {
           800: '#2c5282',
           900: '#2a4365',
         },
+        brightyellow: '#FFE01B',
+        brandpurple: '#C21BFF',
+        redhue: '#FF1B58',
+        flourescent: '#58FF1B',
       },
       keyframes: {
         wiggle: {
