@@ -47,10 +47,10 @@ export default function TestimonialWithStats() {
             <div className="relative overflow-hidden rounded-2xl pt-64 pb-10 shadow-xl">
               <img
                 className="absolute inset-0 h-full w-full object-cover"
-                src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://images.unsplash.com/photo-1543269664-647163ef2ee4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="instudia"
               />
-              <div className="absolute inset-0 bg-yellow-500 mix-blend-multiply" />
+              <div className="absolute inset-0 bg-gray-500 mix-blend-multiply" />
               <div className="from-white-600 via-white-600 absolute inset-0 bg-gradient-to-t opacity-90" />
               <div className="relative px-8">
                 <blockquote className="mt-8">
