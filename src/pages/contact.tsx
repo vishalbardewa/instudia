@@ -26,7 +26,6 @@ const ContactUs = () => {
                     <div className="mt-1">
                       <dt className="sr-only">Phone number</dt>
                       <dd>+91 8798-587-779</dd>
-                      <dd>+91 9774-360-507</dd>
                     </div>
                   </dl>
                 </div>
@@ -41,8 +40,7 @@ const ContactUs = () => {
                     </div>
                     <div className="mt-1">
                       <dt className="sr-only">Phone number</dt>
-                      <dd>+91 7005-531-262</dd>
-                      <dd>+91 8447-385-767</dd>
+                      <dd>+91 9233-606-322</dd>
                     </div>
                   </dl>
                 </div>
@@ -57,8 +55,7 @@ const ContactUs = () => {
                     </div>
                     <div className="mt-1">
                       <dt className="sr-only">Phone number</dt>
-                      <dd>+91 7005-159-910</dd>
-                      <dd>+91 9774-809-276</dd>
+                      <dd>+91 8798-587-779</dd>
                     </div>
                   </dl>
                 </div>
