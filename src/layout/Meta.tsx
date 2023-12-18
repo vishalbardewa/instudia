@@ -1,6 +1,8 @@
+/* eslint-disable @next/next/no-script-component-in-head */
 import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Script from 'next/script';
 
 import { AppConfig } from '@/utils/AppConfig';
 
@@ -9,6 +11,8 @@ type IMetaProps = {
   description: string;
   canonical?: string;
 };
+
+const GA_MEASUREMENT_ID = 'UA-232483046-1';
 
 const Meta = (props: IMetaProps) => {
   const router = useRouter();
@@ -46,11 +50,35 @@ const Meta = (props: IMetaProps) => {
           href={`${router.basePath}/favicon.ico`}
           key="favicon"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+          rel="stylesheet"
+        ></link>
         <meta
           name="facebook-domain-verification"
           content="urvbmhyylbha59lj50184veppyr476"
         />
+        {/* Google tag (gtag.js) */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+   
+            gtag('config', "${GA_MEASUREMENT_ID}");
+          `}
+        </Script>
       </Head>
+
       <NextSeo
         title={props.title}
         description={props.description}

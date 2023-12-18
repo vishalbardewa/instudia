@@ -23,7 +23,7 @@ export default function PageLayout(props: any) {
         />
       }
     >
-      <div className="mx-auto max-w-7xl bg-white sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl bg-white font-jakarta sm:px-6 lg:px-8">
         <motion.main
           variants={variants}
           initial="hidden"

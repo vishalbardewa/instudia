@@ -94,7 +94,7 @@ export default function Navbar() {
                           exit={{ x: 200, opacity: 0 }}
                           transition={{ type: 'spring', stiffness: 30 }}
                           className="h-10 w-auto sm:h-14"
-                          src="/assets/images/instudia-logo.png"
+                          src="/assets/images/logo-with-tagline.png"
                           alt=""
                         />
                       </>
@@ -222,7 +222,7 @@ export default function Navbar() {
                         <div>
                           <img
                             className="h-8 w-auto"
-                            src="/assets/images/instudia-logo.png"
+                            src="/assets/images/logo-with-tagline.png"
                             alt="Instudia"
                           />
                         </div>
