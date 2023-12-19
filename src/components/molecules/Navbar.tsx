@@ -95,7 +95,7 @@ export default function Navbar() {
                           transition={{ type: 'spring', stiffness: 30 }}
                           className="h-10 w-auto sm:h-14"
                           src="/assets/images/logo-with-tagline.png"
-                          alt=""
+                          alt="instudia official logo"
                         />
                       </>
                     </Link>
