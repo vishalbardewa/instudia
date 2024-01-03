@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 
 import { AnimatePresence, AnimateSharedLayout } from 'framer-motion';
-import Snowfall from 'react-snowfall';
 
 import CTAWithText from '@/components/atom/CTAWithText';
 import FeatureWithColumns from '@/components/molecules/FeatureWithThreeCoulmns';
@@ -48,7 +47,6 @@ const Index = () => {
               <FeatureWithColumns />
               <ReasonStepper />
               <CTAWithText href={routes.COURSES} />
-              <Snowfall />
             </main>
           </div>
         </PageLayout>
