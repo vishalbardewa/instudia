@@ -29,7 +29,7 @@ export function Offices({ invert = false, ...props }) {
       </li>
       <li>
         <Office name="instudia" invert={invert}>
-          First Floor, Holo Complex, Opp SBI Niuland Branch
+          First Floor, Holo Complex, Opp. SBI Niuland Branch
           <br />
           Niuland, Nagaland 797109
         </Office>
