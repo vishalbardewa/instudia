@@ -100,8 +100,8 @@ const footerNavigation = {
 };
 
 const topBannerContent = {
-  leadingText: `Big news! We're excited to announce our launch soon.`,
-  ctaText: 'Stay Tuned✌',
+  leadingText: `We're hiring!!`,
+  ctaText: 'Join our team✌',
 };
 
 const MyApp = ({ Component, pageProps }: AppProps) => (

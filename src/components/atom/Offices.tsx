@@ -27,6 +27,13 @@ export function Offices({ invert = false, ...props }) {
           Dimapur, Nagaland 797112
         </Office>
       </li>
+      <li>
+        <Office name="instudia" invert={invert}>
+          First Floor, Holo Complex, Opp SBI Niuland Branch
+          <br />
+          Niuland, Nagaland 797109
+        </Office>
+      </li>
     </ul>
   );
 }
