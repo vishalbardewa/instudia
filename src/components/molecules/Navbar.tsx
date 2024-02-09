@@ -42,12 +42,12 @@ const solutions = [
     duration: '3 to 5 months',
   },
   {
-    name: 'Programming with Python I',
+    name: 'Frontend Development',
     description:
-      'One of the most fastest-growing programming languages in the world driven by its application in machine learning.',
-    href: `${routes.COURSES}/${slugs.PYTHON1}`,
+      'Master frontend development with our React JS course, covering JavaScript basics to advanced techniques for creating dynamic and interactive user interfaces.',
+    href: `${routes.COURSES}/${slugs.FRONTEND}`,
     icon: DesktopComputerIcon,
-    duration: '3 to 6 months',
+    duration: '6 to 9 months',
     variant: 'Beginner, Intermediate and Advanced',
   },
   {

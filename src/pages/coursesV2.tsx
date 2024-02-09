@@ -260,7 +260,10 @@ const EnrollStrip = () => (
 
 export default function Course() {
   return (
-    <PageLayout>
+    <PageLayout
+      metaTitle="Courses to upskill in Dimapur"
+      description="Explore Courses in Programming, Web Development, Project Management, Skill Enhancement, and Diploma in Computer Applications in Dimapur, Nagaland. Elevate Your Skills with Industry-Driven Training. Enroll Now for Career-Boosting Opportunities!"
+    >
       <ContentHead />
       <FourParaGrid />
       <EnrollStrip />

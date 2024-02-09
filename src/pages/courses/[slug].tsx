@@ -206,7 +206,10 @@ const EnrollStrip = () => (
 
 export default function Course({ courseDetails }: any) {
   return (
-    <PageLayout>
+    <PageLayout
+      metaTitle={courseDetails.fullTitle}
+      description={courseDetails.courseHightlight}
+    >
       <ContentHead courseDetails={courseDetails} />
       <FourParaGrid fourReasons={courseDetails.fourReasons} />
       <EnrollStrip />
@@ -246,6 +249,7 @@ export async function getStaticPaths() {
       // { params: { slug: 'graphic-level-2' } },
       // { params: { slug: 'graphic-level-3' } },
       { params: { slug: slugs.ADVANCED_EXCEL } },
+      { params: { slug: slugs.FRONTEND } },
     ],
     fallback: false,
   };

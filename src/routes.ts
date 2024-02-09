@@ -22,4 +22,5 @@ export const slugs = {
   GRAPHIC1: 'graphic-level-1',
   GRAPHIC2: 'graphic-level-2',
   GRAPHIC3: 'graphic-level-3',
+  FRONTEND: 'frontend-development',
 };

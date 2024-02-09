@@ -58,6 +58,7 @@ const About = () => (
         mainText="Why do we do?"
         secondaryText={whyDoWeDoContent}
       />
+      {/* <JoinUs /> */}
       <div className="mt-8">
         <InNewsCard mainText="instudia in news" />
       </div>

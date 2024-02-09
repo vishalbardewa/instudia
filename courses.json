@@ -695,6 +695,93 @@
         }
       ],
       "inDemand": true
+    },
+    {
+      "slug": "frontend-development",
+      "category": "Technology",
+      "fullTitle": "Certificate in Frontend Development",
+      "pageTitle": {
+        "text": "Certificate in",
+        "highlightText": "Frontend Development"
+      },
+      "image": "https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=2864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "courseHightlight": "Unlock the world of modern web development. Dive into React, the leading JavaScript library for building robust and efficient UIs. Elevate your career in web development with hands-on training, industry insights, and a focus on practical applications. Enroll now for a transformative learning experience and step into the future of frontend development",
+      "fourReasons": [
+        {
+          "id": 123,
+          "description": "Gain a solid foundation in JavaScript, covering essential concepts and progressing to advanced techniques. From variables and control flow to closures and asynchronous programming, this course ensures a thorough understanding of JavaScript, empowering you to write efficient and effective code."
+        },
+        {
+          "id": 1234,
+          "description": "Specialize in React, a powerful library for building modern user interfaces. Dive into the React ecosystem, understanding components, state management, and the Virtual DOM. Learn to leverage React's capabilities to create dynamic and responsive web applications, making you proficient in one of the most sought-after frontend technologies."
+        },
+        {
+          "id": 1235,
+          "description": "Apply theoretical knowledge in real-world scenarios through hands-on projects and exercises. Develop practical skills by working on industry-relevant projects, allowing you to build a strong portfolio showcasing your expertise in JavaScript and React. This practical experience ensures you are job-ready and capable of tackling real-world development challenges."
+        },
+        {
+          "id": 1236,
+          "description": "Benefit from insights into industry best practices and trends. Stay updated with the latest advancements in frontend development, ensuring that your skills remain current and in-demand. Guest lectures, case studies, and discussions with industry professionals provide valuable perspectives, preparing you to excel in a competitive job market."
+        }
+      ],
+      "relatedCourses": [
+        {
+          "title": "Programming with Python II",
+          "description": "This is the most comprehensive, yet straight-forward, course for the Python programming language in town! Whether you have never programmed before, already know basic syntax, or want to learn about the advanced features of Python! In this course we will teach you Python 3.",
+          "shortDescription": "Comprehensive programming course covering basics into the world of Python",
+          "price": {
+            "original": 4999,
+            "discountedPrice": 2999
+          },
+          "features": {
+            "duration": "1 month",
+            "prerequisites": ["Basics of Computer"],
+            "level": "Entry",
+            "keySkills": ["Tally", "Networking", "Python"]
+          },
+          "imageUrl": "/assets/images/python-level-2.png"
+        },
+        {
+          "title": "Programming with Python I",
+          "description": "This is the most comprehensive, yet straight-forward, course for the Python programming language in town! Whether you have never programmed before, already know basic syntax, or want to learn about the advanced features of Python! In this course we will teach you Python 3.",
+          "shortDescription": "Comprehensive programming course covering basics into the world of Python",
+          "price": {
+            "original": 4999,
+            "discountedPrice": 2999
+          },
+          "features": {
+            "duration": "1 month",
+            "prerequisites": ["Basics of Computer"],
+            "level": "Entry",
+            "keySkills": ["Tally", "Networking", "Python"]
+          },
+          "imageUrl": "/assets/images/python-level-1.png"
+        }
+      ],
+      "price": { "original": 89000, "discountedPrice": 75999 },
+      "features": [
+        {
+          "name": "Language",
+          "description": "English, Hindi & Nagamese",
+          "icon": "BadgeCheckIcon"
+        },
+        {
+          "name": "Certificate",
+          "description": "On Completion",
+          "icon": "AcademicCapIcon"
+        },
+        {
+          "name": "Duration",
+          "description": "6",
+          "icon": "ClockIcon"
+        },
+        {
+          "name": "Recommended Qualifications",
+          "description": "Higher Secondary and Above",
+          "icon": "LibraryIcon"
+        }
+      ],
+      "inDemand": true
     }
   ]
 }

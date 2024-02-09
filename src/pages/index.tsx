@@ -35,7 +35,7 @@ const Index = () => {
         (
         <PageLayout
           metaTitle="Trainings on Programming and Skill Development Courses in Dimapur | instudia "
-          description="Elevate your career with leading computer and skill training in Dimapur, Nagaland. Explore cutting-edge courses in programming, web development, project management, skill development, and digital marketing. Unlock your full potential with hands-on training from industry experts."
+          description="Take your career to new heights with our top-notch computer and skill training in Dimapur, Nagaland. Delve into innovative courses covering programming, web development, project management, skill enhancement, and digital domain. Unleash your full potential with practical, industry-led training designed to propel your success."
         >
           <div className="bg-white">
             <main>

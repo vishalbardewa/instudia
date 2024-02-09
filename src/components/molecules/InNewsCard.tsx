@@ -3,8 +3,7 @@ import moment from 'moment';
 const MEDIA_LOGO = {
   MORUNG_EXPRESS:
     'https://morungexpress.com/public/front/images/morung_logo.png',
-  NAGALAND_POST:
-    'https://nagalandpost.com/wp-content/uploads/2021/12/Footlogo-300x69-1-e1667399626292.png',
+  NAGALAND_POST: '/assets/images/nagaland-post.jpeg',
   EASTERN_MIRROR:
     'https://scontent.fgau3-3.fna.fbcdn.net/v/t39.30808-6/357750063_688843333257024_2945734525276846803_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=wWT6XZzFdCYAX_aCxKr&_nc_ht=scontent.fgau3-3.fna&oh=00_AfBTU1xCLoT4-KHusCv_gbLvvU1ZzLbRpGYa6t1rNWXmbw&oe=65852981',
 };
@@ -17,8 +16,8 @@ const people = [
     role: 'Nagaland Post',
     imageUrl: MEDIA_LOGO.NAGALAND_POST,
     imageDimensions: {
-      h: 12,
-      w: 32,
+      h: 24,
+      w: 24,
     },
     dateOfPublication: moment('2022-06-25').format('LL'),
   },
