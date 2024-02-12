@@ -34,7 +34,7 @@ const Index = () => {
       <AnimatePresence exitBeforeEnter>
         (
         <PageLayout
-          metaTitle="Unlock Excellence: Dimapur's Finest Programming & Skill Courses | instudia "
+          metaTitle="Unlock Excellence: Dimapur's Finest Computer and Skill Training Courses | instudia "
           description="Elevate your career with premier computer and skill training in Dimapur, Nagaland. Explore cutting-edge courses in programming, web development, project management, and digital skills. Unlock your potential with instudia through industry-focused training for success."
         >
           <div className="bg-white">
