@@ -12,12 +12,23 @@ export default function Footer({ footerNavigation }: any) {
         >
           {footerNavigation.main.map((item: any) => (
             <div key={item.name} className="px-5 py-2">
-              <a
-                href={item.href}
-                className="text-base text-gray-400 hover:text-gray-300"
-              >
-                {item.name}
-              </a>
+              {item?.external ? (
+                <a
+                  href={item.href}
+                  target="_blank"
+                  rel={'noreferrer'}
+                  className="text-base text-gray-400 hover:text-gray-300"
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <a
+                  href={item.href}
+                  className="text-base text-gray-400 hover:text-gray-300"
+                >
+                  {item.name}
+                </a>
+              )}
             </div>
           ))}
         </nav>

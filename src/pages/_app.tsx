@@ -25,14 +25,21 @@ const theme = {
 
 const footerNavigation = {
   main: [
-    { name: 'About', href: `${routes.ABOUT_US}` },
-    { name: 'Blog', href: '#' },
-    { name: 'Jobs', href: '#' },
-    { name: 'Workshops', href: `${routes.WORKSHOPS}` },
-    { name: 'Partners', href: '#' },
-    { name: 'Careers', href: '/career' },
-    { name: 'Privacy Policy', href: `${routes.PRIVACY_POLICY}` },
-    { name: 'Terms & Conditions', href: `${routes.TERMS_AND_CONDITIONS}` },
+    { name: 'About', href: `${routes.ABOUT_US}`, external: false },
+    { name: 'Blog', href: 'https://blog.instudianagaland.com', external: true },
+    { name: 'Workshops', href: `${routes.WORKSHOPS}`, external: false },
+    { name: 'Partners', href: '#', external: false },
+    { name: 'Careers', href: '/career', external: false },
+    {
+      name: 'Privacy Policy',
+      href: `${routes.PRIVACY_POLICY}`,
+      external: false,
+    },
+    {
+      name: 'Terms & Conditions',
+      href: `${routes.TERMS_AND_CONDITIONS}`,
+      external: false,
+    },
   ],
   social: [
     {
