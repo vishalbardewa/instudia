@@ -13,7 +13,13 @@ export function Button({ invert, href, className, children, ...props }: any) {
 
   if (href) {
     return (
-      <Link target={props?.target} href={href} className={className} {...props}>
+      <Link
+        target={props?.target}
+        rel="noopener"
+        href={href}
+        className={className}
+        {...props}
+      >
         {inner}
       </Link>
     );

@@ -20,7 +20,12 @@ export default function Career() {
               </h2>
               <span className="text-white">Fill out the application form.</span>
               <div className="mt-6 flex">
-                <Button target="_blank" href={AppConfig.hiringLink} invert>
+                <Button
+                  target="_blank"
+                  rel="noopener"
+                  href={AppConfig.hiringLink}
+                  invert
+                >
                   Join Us
                 </Button>
               </div>

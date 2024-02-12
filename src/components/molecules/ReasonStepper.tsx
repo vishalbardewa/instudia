@@ -26,6 +26,7 @@ export default function ReasonStepper() {
                   <div className="mt-6">
                     <Button
                       target="_blank"
+                      rel="noopener"
                       href="https://tally.so/r/wvebpA"
                       className="inline-block rounded-md border border-transparent bg-yellow-600 py-3 px-8 font-medium text-white hover:bg-yellow-700"
                     >
@@ -39,7 +40,7 @@ export default function ReasonStepper() {
           <div className="h-48 w-full sm:h-64 lg:absolute lg:top-0 lg:right-0 lg:h-full lg:w-1/2">
             <img
               src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-              alt=""
+              alt="reason to join instudia"
               className="h-full w-full object-cover object-center"
             />
           </div>
