@@ -26,6 +26,7 @@ const Meta = (props: IMetaProps) => {
           content="width=device-width,initial-scale=1"
           key="viewport"
         />
+        <meta name="title" content={props.title} />
         <link
           rel="apple-touch-icon"
           href={`${router.basePath}/apple-touch-icon.png`}
@@ -74,7 +75,6 @@ const Meta = (props: IMetaProps) => {
           `}
         </Script>
       </Head>
-
       <NextSeo
         title={props.title}
         description={props.description}
@@ -84,7 +84,31 @@ const Meta = (props: IMetaProps) => {
           description: props.description,
           url: `${AppConfig.canonicalBase}${router.asPath}`,
           locale: AppConfig.locale,
-          site_name: AppConfig.site_name,
+          siteName: AppConfig.site_name,
+          images: [
+            {
+              url: '/assets/images/ogimage.webp',
+              width: 1200,
+              height: 630,
+              alt: 'Upskill with instudia ogimage',
+            },
+            {
+              url: '/assets/images/ogimage.webp',
+              width: 1200,
+              height: 630,
+              alt: 'Enroll with instudia ogimage',
+            },
+          ],
+        }}
+        titleTemplate="%s | instudia"
+        robotsProps={{
+          nosnippet: true,
+          notranslate: true,
+          noimageindex: true,
+          noarchive: true,
+          maxSnippet: -1,
+          maxImagePreview: 'none',
+          maxVideoPreview: -1,
         }}
       />
     </>

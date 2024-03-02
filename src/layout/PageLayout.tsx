@@ -18,8 +18,8 @@ export default function PageLayout(props: any) {
     <Main
       meta={
         <Meta
-          title={props?.metaTitle || 'instudia'}
-          description={props?.description || 'instudia'}
+          title={props.metaTitle || 'instudia'}
+          description={props.description || 'instudia'}
         />
       }
     >
