@@ -88,14 +88,14 @@ const Meta = (props: IMetaProps) => {
           images: [
             {
               url: 'https://res.cloudinary.com/dhwg77gwm/image/upload/f_auto,q_auto/v1/instudia/tqo7qzztc4duzktj0jt9',
-              width: 1200,
-              height: 630,
+              width: 800,
+              height: 600,
               alt: 'Upskill with instudia ogimage',
             },
             {
               url: 'https://res.cloudinary.com/dhwg77gwm/image/upload/f_auto,q_auto/v1/instudia/qzmdhewkbsyxmwsjccnu',
-              width: 1200,
-              height: 630,
+              width: 800,
+              height: 600,
               alt: 'Enroll with instudia ogimage',
             },
           ],
