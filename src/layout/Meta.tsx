@@ -87,13 +87,13 @@ const Meta = (props: IMetaProps) => {
           siteName: AppConfig.site_name,
           images: [
             {
-              url: '/assets/images/ogimage.webp',
+              url: 'https://res.cloudinary.com/dhwg77gwm/image/upload/f_auto,q_auto/v1/instudia/tqo7qzztc4duzktj0jt9',
               width: 1200,
               height: 630,
               alt: 'Upskill with instudia ogimage',
             },
             {
-              url: '/assets/images/ogimage.webp',
+              url: 'https://res.cloudinary.com/dhwg77gwm/image/upload/f_auto,q_auto/v1/instudia/qzmdhewkbsyxmwsjccnu',
               width: 1200,
               height: 630,
               alt: 'Enroll with instudia ogimage',
