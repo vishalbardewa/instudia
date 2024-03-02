@@ -90,6 +90,7 @@ const Meta = (props: IMetaProps) => {
               url: 'https://res.cloudinary.com/dhwg77gwm/image/upload/f_auto,q_auto/v1/instudia/tqo7qzztc4duzktj0jt9',
               width: 800,
               height: 600,
+              type: 'image/jpeg',
               alt: 'Upskill with instudia ogimage',
             },
             {
@@ -97,6 +98,7 @@ const Meta = (props: IMetaProps) => {
               width: 800,
               height: 600,
               alt: 'Enroll with instudia ogimage',
+              type: 'image/jpeg',
             },
           ],
         }}
