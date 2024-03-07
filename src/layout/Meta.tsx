@@ -61,6 +61,8 @@ const Meta = (props: IMetaProps) => {
           name="facebook-domain-verification"
           content="urvbmhyylbha59lj50184veppyr476"
         />
+        <title>{props.title}</title>
+        <meta name="description" content={props.description} />
         {/* Google tag (gtag.js) */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
