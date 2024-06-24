@@ -16,12 +16,7 @@ const variants = {
 export default function PageLayout(props: any) {
   return (
     <Main
-      meta={
-        <Meta
-          title={props.metaTitle || 'instudia'}
-          description={props.description || 'instudia'}
-        />
-      }
+      meta={<Meta title={props.metaTitle} description={props.description} />}
     >
       <div className="mx-auto max-w-7xl bg-white font-jakarta sm:px-6 lg:px-8">
         <motion.main

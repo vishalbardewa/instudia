@@ -107,8 +107,8 @@ const footerNavigation = {
 };
 
 const topBannerContent = {
-  leadingText: `We're hiring!!`,
-  ctaText: 'Join our team✌',
+  leadingText: `Supercharge your skills in 2 weeks (15th July to 26th July 2024)`,
+  ctaText: 'Join our Summer Camp 😎',
 };
 
 const MyApp = ({ Component, pageProps }: AppProps) => (

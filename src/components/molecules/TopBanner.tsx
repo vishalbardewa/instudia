@@ -10,7 +10,7 @@ type BannerProps = {
 export default function TopBanner(props: BannerProps) {
   return (
     // eslint-disable-next-line tailwindcss/no-custom-classname
-    <div className="bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800">
+    <div className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-400">
       <div className="mx-auto max-w-7xl p-3 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between">
           <div className="flex w-0 flex-1 items-center">
@@ -27,7 +27,8 @@ export default function TopBanner(props: BannerProps) {
           </div>
           <div className="order-3 mt-2 w-full shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
             <Link
-              href="/career"
+              target="_blank"
+              href="https://tally.so/r/n9XYZQ"
               className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-2 text-sm font-medium text-yellow-600 shadow-sm hover:bg-yellow-50"
             >
               {props.ctaText}
