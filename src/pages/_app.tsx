@@ -107,8 +107,8 @@ const footerNavigation = {
 };
 
 const topBannerContent = {
-  leadingText: `Supercharge your skills in 2 weeks (15th July to 26th July 2024)`,
-  ctaText: 'Join our Summer Camp 😎',
+  leadingText: `Enroll for Diploma in Computer Applications`,
+  ctaText: 'Join now',
 };
 
 const MyApp = ({ Component, pageProps }: AppProps) => (

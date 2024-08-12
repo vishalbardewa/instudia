@@ -27,6 +27,7 @@ const Meta = (props: IMetaProps) => {
           key="viewport"
         />
         <meta name="title" content={props.title} />
+        <meta name="description" content={props.description} />
         <link
           rel="apple-touch-icon"
           href={`${router.basePath}/apple-touch-icon.png`}
@@ -62,7 +63,6 @@ const Meta = (props: IMetaProps) => {
           content="urvbmhyylbha59lj50184veppyr476"
         />
         <title>{props.title}</title>
-        <meta name="description" content={props.description} />
         {/* Google tag (gtag.js) */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
@@ -78,8 +78,8 @@ const Meta = (props: IMetaProps) => {
         </Script>
       </Head>
       <NextSeo
-        title={props.title}
-        description={props.description}
+        // title={props.title}
+        // description={props.description}
         canonical={`${AppConfig.canonicalBase}${router.asPath}`}
         openGraph={{
           title: props.title,
@@ -93,13 +93,13 @@ const Meta = (props: IMetaProps) => {
               width: 800,
               height: 600,
               type: 'image/jpeg',
-              alt: 'Upskill with instudia ogimage',
+              alt: 'Upskill with instudia',
             },
             {
               url: 'https://res.cloudinary.com/dhwg77gwm/image/upload/f_auto,q_auto/v1/instudia/qzmdhewkbsyxmwsjccnu',
               width: 800,
               height: 600,
-              alt: 'Enroll with instudia ogimage',
+              alt: 'Enroll with instudia',
               type: 'image/jpeg',
             },
           ],

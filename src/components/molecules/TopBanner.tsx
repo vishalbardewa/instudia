@@ -10,7 +10,7 @@ type BannerProps = {
 export default function TopBanner(props: BannerProps) {
   return (
     // eslint-disable-next-line tailwindcss/no-custom-classname
-    <div className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-400">
+    <div className="bg-gradient-to-r from-black via-black to-black">
       <div className="mx-auto max-w-7xl p-3 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between">
           <div className="flex w-0 flex-1 items-center">
