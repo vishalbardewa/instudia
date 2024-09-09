@@ -2,10 +2,12 @@ import moment from 'moment';
 
 const MEDIA_LOGO = {
   MORUNG_EXPRESS:
-    'https://morungexpress.com/public/front/images/morung_logo.png',
+    'https://pbs.twimg.com/profile_images/1554864969032028161/w-4H-ulQ_400x400.jpg',
   NAGALAND_POST: '/assets/images/nagaland-post.jpeg',
   EASTERN_MIRROR:
-    'https://scontent.fgau3-3.fna.fbcdn.net/v/t39.30808-6/357750063_688843333257024_2945734525276846803_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=wWT6XZzFdCYAX_aCxKr&_nc_ht=scontent.fgau3-3.fna&oh=00_AfBTU1xCLoT4-KHusCv_gbLvvU1ZzLbRpGYa6t1rNWXmbw&oe=65852981',
+    'https://pbs.twimg.com/profile_images/1675826977985667073/evKiBnFA_400x400.jpg',
+  MOKOKCHUNG_TIMES:
+    'https://pbs.twimg.com/profile_images/1496406495818252288/OA1MxSzf_400x400.jpg',
 };
 
 const people = [
@@ -44,6 +46,18 @@ const people = [
       w: 24,
     },
     dateOfPublication: moment('2022-06-25').format('LL'),
+  },
+  {
+    name: 'instudia organizes ‘JobEx’ job fair',
+    email: '',
+    link: 'https://mokokchungtimes.com/instudia-organizes-jobex-job-fair/',
+    role: 'Mokokchung Times',
+    imageUrl: MEDIA_LOGO.MOKOKCHUNG_TIMES,
+    imageDimensions: {
+      h: 24,
+      w: 24,
+    },
+    dateOfPublication: moment('2023-03-12').format('LL'),
   },
 ];
 
@@ -85,12 +99,12 @@ export default function InNewsCard({ mainText }: any) {
                 <p className="!my-0 truncate text-sm text-gray-500">
                   {person.dateOfPublication}
                 </p>
-                <a
+                {/* <a
                   href={person.link}
                   target="_blank"
                   className=""
                   rel="noreferrer"
-                ></a>
+                ></a> */}
                 <p className="!my-0 truncate text-sm text-yellow-500">
                   Read the whole story
                 </p>
